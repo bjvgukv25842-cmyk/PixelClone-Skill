@@ -1,167 +1,195 @@
-﻿# PixelClone Skill
+﻿# PixelClone Skill｜像素级网页复刻 Skill
 
-PixelClone Skill turns a total web design reference into a real frontend with pixel-level visual fidelity while preserving the existing product behavior.
+## 先看这里：如何部署这个 Skill
 
-It is designed for the modern AI UI workflow:
+本仓库提供两款 skill：
 
-1. Generate or prepare a beautiful full-page web design reference.
-2. Give that reference to Codex or another coding agent.
-3. Let the agent rebuild the existing frontend by copying the reference, not inventing a new design.
-
-The repository provides two skills:
-
-| User Language | Recommended Skill | Path |
+| 使用者 | 推荐安装 | 路径 |
 | --- | --- | --- |
-| English users | `pixel-perfect-reference-ui` | `skills/pixel-perfect-reference-ui` |
 | 中文用户 | `pixel-perfect-reference-ui-zh` | `skills/pixel-perfect-reference-ui-zh` |
+| 英文用户 | `pixel-perfect-reference-ui` | `skills/pixel-perfect-reference-ui` |
 
-If you mainly prompt in Chinese, install the Chinese skill. If you mainly prompt in English, install the English skill. Both versions provide the same workflow and helper scripts.
+如果你主要用中文提示 Codex，请安装中文版；如果你主要用英文提示 Codex，请安装英文版。两款 skill 的能力一致，只是语言不同。
 
-## What Problem Does It Solve?
+### 1. 克隆仓库
 
-AI coding agents are good at building frontends, but they often fail at strict visual replication.
+```bash
+git clone https://github.com/bjvgukv25842-cmyk/PixelClone-Skill.git
+cd PixelClone-Skill
+```
 
-Common problems:
+### 2. 安装到 Codex
 
-- The agent treats the design as inspiration instead of a strict source of truth.
-- It invents new icons, illustrations, gradients, ornaments, or UI language.
-- It uses external assets that do not match the reference.
-- It changes layout proportions, section heights, page width, or spacing.
-- It stretches or clips reference assets.
-- It leaves white edges, black edges, dirty backgrounds, or halo artifacts around cropped images.
-- It breaks existing routes, API calls, form behavior, buttons, filters, or user flows while restyling.
+Windows PowerShell：
 
-PixelClone Skill forces a safer workflow:
+```powershell
+# 中文用户安装这一款
+Copy-Item -Recurse .\skills\pixel-perfect-reference-ui-zh "$env:USERPROFILE\.codex\skills\"
 
-- The reference design is the only visual source of truth.
-- The existing app is the only business behavior source of truth.
-- Visual assets must come from the provided reference or user-provided local replacement files.
-- Functional UI must remain real HTML/CSS/components, not screenshots.
-- Layout must be measured: canvas size, section heights, gutters, columns, text boxes, and asset bounding boxes.
-- The final result must be checked in the real browser, at the exact URL and viewport the user sees.
+# 英文用户安装这一款
+Copy-Item -Recurse .\skills\pixel-perfect-reference-ui "$env:USERPROFILE\.codex\skills\"
+```
 
-## What Can This Skill Do?
+macOS / Linux：
 
-PixelClone Skill helps a coding agent perform:
+```bash
+mkdir -p ~/.codex/skills
 
-- Full-page website UI replication from a total design image.
-- Existing frontend restyling without changing product behavior.
-- Image2-generated web design implementation.
-- Screenshot/mockup/Figma export to real frontend conversion.
-- Reference-only asset extraction and placement.
-- High-precision decorative asset replacement.
-- Pixel-level layout blueprint creation.
-- Section height, container width, gutter, grid, and hero/media region matching.
-- Transparent PNG/WebP asset cleanup.
-- White-edge, black-edge, hard-edge, halo, and background-residue fixes.
-- Responsive desktop/mobile visual QA.
-- Dropdown/modal/z-index regression checks.
-- Business flow preservation during frontend redesign.
+# 中文用户安装这一款
+cp -R ./skills/pixel-perfect-reference-ui-zh ~/.codex/skills/
 
-## What It Does Not Do
+# 英文用户安装这一款
+cp -R ./skills/pixel-perfect-reference-ui ~/.codex/skills/
+```
 
-PixelClone Skill is intentionally strict.
+安装后重启 Codex，让 skill 列表刷新。
 
-It should not:
+### 3. 在 Codex 中调用
 
-- Redesign freely from taste.
-- Invent new decorative elements.
-- Download external UI kits, icon packs, stock images, or templates.
-- Replace real forms, tables, buttons, filters, or modals with screenshots.
-- Change backend APIs, auth, stores, schemas, route logic, validation, or database code.
-- Hide existing features to make a design look cleaner.
+中文用户：
 
-## Where Can the Total Design Reference Come From?
+```text
+Use $pixel-perfect-reference-ui-zh。
+请基于我提供的总设计图，对当前网页进行像素级一比一复刻。
+参考图路径：[path]
+目标页面：[url/page]
+```
 
-The reference can come from many sources, as long as the user has the right to use it:
+英文用户：
 
-- GPT image generation / image2 output.
-- Midjourney, Stable Diffusion, Flux, or other AI-generated UI images.
-- Figma, Sketch, Adobe XD, Framer, Webflow, or Penpot export.
-- Product screenshots.
-- Landing page screenshots.
-- Dribbble-style mockups created by your own workflow.
-- Local design image folders containing logos, decorations, backgrounds, buttons, icons, and illustrations.
-- Hand-composed full-page UI references.
+```text
+Use $pixel-perfect-reference-ui.
+Rebuild this frontend page from my total design reference with pixel-level fidelity.
+Reference path: [path]
+Target page: [url/page]
+```
 
-Best results come from high-resolution full-page references with clear layout boundaries and complete visual assets.
+---
 
-## Repository Structure
+## PixelClone 是什么？
+
+PixelClone Skill 是一套面向 Codex 和其他 coding agent 的网页视觉复刻工作流。
+
+它的目标很直接：
+
+> 把一张 AI 生成的网页总设计图、Figma 导出图、截图或 Mockup，尽可能像素级一比一复刻成真实可运行的前端页面，同时不破坏现有业务功能。
+
+它不是让 AI “参考风格重新设计”，而是让 AI 按总设计图复制：
+
+- 复制页面宽度和整体布局。
+- 复制 section 高度和上下分布。
+- 复制左右栏比例、卡片网格、留白和对齐。
+- 从参考图中裁切 logo、图标、按钮背景、装饰贴图和插画。
+- 保留现有页面的 API、路由、表单、按钮、状态管理和用户流程。
+
+## 它解决了什么问题？
+
+很多 vibe coder 会用 GPT image、image2、Midjourney、Figma 或其他工具先生成漂亮网页设计图，然后让 Codex、Claude Code、Cursor 等工具实现。
+
+但常见问题是：
+
+- Coding agent 把设计图当成“灵感”，而不是“唯一视觉来源”。
+- 它会自己创造新图标、新插画、新装饰和新布局。
+- 它会使用外部素材，导致风格不统一。
+- 它会把页面宽度、section 高度、主视觉比例、卡片间距做错。
+- 它会裁切素材时留下白边、黑边、脏边或硬矩形背景。
+- 它可能为了视觉改版误改业务逻辑、按钮行为、路由或表单流程。
+
+PixelClone 的核心约束是：
+
+- 参考图是唯一视觉真相。
+- 当前应用是唯一业务行为真相。
+- Codex 的任务是复制，不是再设计。
+- 所有装饰素材只能来自参考图或用户提供的本地素材。
+- 真实功能区域必须仍然是 HTML/CSS/组件，不能截图化。
+- 修改后必须用真实浏览器截图、布局蓝图和项目检查命令验证。
+
+## 这个 Skill 能做什么？
+
+PixelClone 可以帮助 coding agent 完成：
+
+- 基于网页总设计图的一比一前端复刻。
+- 基于 image2 / GPT image 生成网页图的真实前端落地。
+- 现有项目的 UI 视觉重构，且不改变业务功能。
+- 局部素材替换，例如 logo、按钮、花朵、贴图、插画、背景、卡片装饰。
+- 从参考图中裁切素材，并清理白边、黑边、锯齿和背景残留。
+- 建立布局蓝图，测量画布宽高、section 高度、左右 gutter、主视觉包围盒和卡片网格。
+- 修复视觉问题，例如素材截断、组件重叠、按钮文字溢出、布局比例不准、移动端错位。
+- 检查下拉菜单、弹窗、抽屉、Toast、功能面板是否被装饰层遮挡。
+- 在保留 API、路由、状态管理、表单校验、筛选排序分页的前提下做 UI 改版。
+
+## 它不能做什么？
+
+PixelClone 是一个“复刻纪律”，不是自由设计工具。
+
+它不应该：
+
+- 凭审美重新设计页面。
+- 自己创造参考图里不存在的花、叶子、机器人、图标、背景、按钮或插画。
+- 下载外部 UI 模板、图标包、图库图或贴纸。
+- 把真实表单、表格、筛选器、弹窗、导航截图化。
+- 修改后端接口、权限、数据库、schema、validation、store 或业务路由逻辑。
+- 为了视觉效果隐藏已有功能或删除用户可执行操作。
+
+## 总设计图可以来自哪里？
+
+只要你拥有使用权，总设计图可以来自：
+
+- GPT image / image2 生成的网页设计图。
+- Midjourney、Stable Diffusion、Flux 等 AI 生成图。
+- Figma、Sketch、Adobe XD、Framer、Webflow、Penpot 导出图。
+- 产品截图或竞品截图。
+- Landing page 长截图。
+- 你自己整理的 Dribbble 风格 Mockup。
+- 本地参考图文件夹，例如 logo、装饰、按钮、图标、插画、背景等。
+- 手动拼合的完整网页视觉参考图。
+
+推荐使用高清、完整、边界清楚的总设计图。图越清晰，复刻越接近像素级。
+
+## 仓库结构
 
 ```text
 PixelClone-Skill/
   README.md
   skills/
-    pixel-perfect-reference-ui/       # English skill
+    pixel-perfect-reference-ui/       # 英文版 skill
       SKILL.md
       agents/
       scripts/
         prepare_reference_asset.py
         extract_layout_blueprint.py
-    pixel-perfect-reference-ui-zh/    # Chinese skill
+    pixel-perfect-reference-ui-zh/    # 中文版 skill
       SKILL.md
       scripts/
         prepare_reference_asset.py
         extract_layout_blueprint.py
 ```
 
-## Installation For Codex
+## 两个辅助脚本
 
-### Option 1: Copy Manually
+Skill 内置两个可选 Python 脚本，用于更稳定地完成像素级复刻。
 
-Clone this repository:
-
-```bash
-git clone https://github.com/bjvgukv25842-cmyk/PixelClone-Skill.git
-```
-
-Copy the skill you want into your Codex skills directory.
-
-English version:
+使用前安装 Pillow：
 
 ```bash
-mkdir -p ~/.codex/skills
-cp -R PixelClone-Skill/skills/pixel-perfect-reference-ui ~/.codex/skills/
+python -m pip install Pillow
 ```
-
-Chinese version:
-
-```bash
-mkdir -p ~/.codex/skills
-cp -R PixelClone-Skill/skills/pixel-perfect-reference-ui-zh ~/.codex/skills/
-```
-
-On Windows PowerShell, use paths like:
-
-```powershell
-Copy-Item -Recurse .\skills\pixel-perfect-reference-ui "$env:USERPROFILE\.codex\skills\"
-Copy-Item -Recurse .\skills\pixel-perfect-reference-ui-zh "$env:USERPROFILE\.codex\skills\"
-```
-
-Restart Codex after installing so the skill list refreshes.
-
-### Option 2: Install Both
-
-You may install both skills at the same time. Use the English skill for English prompts and the Chinese skill for Chinese prompts.
-
-## Python Helper Scripts
-
-The skills include two optional helper scripts.
 
 ### `prepare_reference_asset.py`
 
-Used for cropping and cleaning assets from the design reference.
+用于从参考图裁切并清理素材。
 
-It can help with:
+它可以处理：
 
-- Precise crop output.
-- Transparent PNG/WebP preparation.
-- Connected near-background removal.
-- 1-2px alpha feathering.
-- Page-background matte blending.
-- Asset inspection report generation.
+- 精确裁切。
+- 输出 PNG / WebP。
+- 透明背景 alpha 处理。
+- 移除连接到边缘的近背景色。
+- 1px 到 2px 边缘羽化。
+- 使用页面背景色做 matte 融合。
+- 生成素材检查报告。
 
-Example:
+示例：
 
 ```bash
 python scripts/prepare_reference_asset.py \
@@ -175,18 +203,18 @@ python scripts/prepare_reference_asset.py \
 
 ### `extract_layout_blueprint.py`
 
-Used for turning a total design screenshot into a measurable layout blueprint.
+用于把总设计图转成可测量的布局蓝图。
 
-It records:
+它会记录：
 
-- Reference canvas width and height.
-- Target viewport width.
-- Section y positions and heights.
-- Major region bounding boxes.
-- Grid container width, columns, and gutters.
-- Optional CSS variable output.
+- 参考图画布宽高。
+- 目标浏览器视口宽度。
+- section 的 y 起点和高度。
+- 主要区域的包围盒。
+- 页面容器宽度、列数、gutter。
+- 可选 CSS 变量输出。
 
-Example:
+示例：
 
 ```bash
 python scripts/extract_layout_blueprint.py \
@@ -200,149 +228,122 @@ python scripts/extract_layout_blueprint.py \
   --grid 120,1680,12,24
 ```
 
-These scripts require Python and Pillow:
+## Codex 使用示例
 
-```bash
-python -m pip install Pillow
-```
-
-They are optional, but recommended for serious pixel-level replication.
-
-## How To Use In Codex
-
-### English Prompt
-
-```text
-Use $pixel-perfect-reference-ui.
-Rebuild this existing frontend page to match the provided total design reference as closely as possible.
-Reference path: [path].
-Target URL/page: [url/page].
-Treat the reference as the only visual source of truth and the current app as the only behavior source of truth.
-Preserve APIs, routes, stores, auth, form fields, validation, filters, sorting, pagination, click actions, and user flows.
-Extract visual assets only from the provided reference. Do not use external assets or redraw similar visuals.
-Build real HTML/CSS/components for functional UI.
-Verify desktop/mobile screenshots, layout blueprint proportions, served asset URLs, and build/lint/typecheck if available.
-```
-
-### 中文提示词
+### 整页复刻
 
 ```text
 Use $pixel-perfect-reference-ui-zh。
 请将当前已有前端页面按我提供的总设计图尽可能一比一复刻。
-参考图路径：[path]。
-目标页面/URL：[url/page]。
+参考图路径：[path]
+目标页面/URL：[url/page]
 请把参考图视为唯一视觉来源，把当前应用视为唯一业务行为来源。
-必须完整保留业务行为：API、路由、store、auth、表单字段、校验、筛选、排序、分页、点击事件和用户流程都不能改变。
+API、路由、store、auth、表单字段、校验、筛选、排序、分页、点击事件和用户流程都不能改变。
 所有视觉素材只能从我提供的参考图中裁切，不得使用外部素材，不得自己重画类似元素。
 功能 UI 必须仍然是真实 HTML/CSS/组件。
 完成后检查桌面端和移动端截图、布局蓝图比例、实际 served asset URL，以及项目可用的 build/lint/typecheck。
 ```
 
-## Typical Workflows
-
-### 1. Full Page Replication
-
-Use this when you have a full design image and want the current frontend to match it.
+### 单个素材替换
 
 ```text
-Use $pixel-perfect-reference-ui. Match this page to my total design reference. Do not change business behavior. Extract all visual assets from the reference only.
+Use $pixel-perfect-reference-ui-zh。
+请只替换 [页面/区域/组件] 中的 [当前素材/按钮/装饰]，新素材来自 [path/name]。
+保留原有行为、点击事件、路由、表单逻辑、状态和附近布局。
+新素材必须按原始比例显示，不能拉伸、裁切或过度放大。
+除非我明确要求移动，否则保持原位置。
+若有白边/黑边，按重新裁切、透明处理、1-2px 羽化、matte 融合的顺序处理。
+不要改其他页面或组件。
+完成后验证没有截断、重叠、旧缓存或 UI 回归。
 ```
 
-### 2. Single Asset Replacement
-
-Use this when only one button, logo, flower, icon, background, card decoration, or illustration needs replacement.
+### 布局比例修正
 
 ```text
-Use $pixel-perfect-reference-ui. Replace only the hero-right decorative image with the local asset at [path]. Keep the same behavior, position, aspect ratio, and nearby layout. Do not change other components.
+Use $pixel-perfect-reference-ui-zh。
+现在页面视觉已经接近参考图，但页面宽度、section 高度、左右 gutter、主视觉包围盒和卡片网格比例还不准确。
+请先基于参考图建立布局蓝图，再调整页面，使它在参考图对应的桌面视口下尽可能一比一匹配。
+不要改业务逻辑，不要替换无关素材。
 ```
 
-### 3. Layout Proportion Fix
-
-Use this when the page looks good but does not match the original design's size distribution.
+### 素材边缘清理
 
 ```text
-Use $pixel-perfect-reference-ui. The current result looks visually close, but section heights, page width, gutters, and hero media bounding boxes do not match the reference. Build a layout blueprint from the reference and adjust the page to match it at the reference desktop viewport.
+Use $pixel-perfect-reference-ui-zh。
+请重新处理这个素材。它来自参考图，但现在有明显白边/黑边/脏边。
+请重新裁切，移除连接到边缘的近背景色，做 1-2px 羽化，保留 alpha，并在浏览器里验证没有明显光晕。
+禁止自己绘制或生成替代素材。
 ```
 
-### 4. Edge Cleanup
+## 如何用于 Codex 之外的 coding 软件？
 
-Use this when cropped assets have white edges, black edges, dirty backgrounds, or obvious cut marks.
+虽然这个仓库按 Codex skill 格式组织，但其中的工作流也可以用于其他 coding agent。
+
+适用工具包括：
+
+- Claude Code
+- Cursor
+- Windsurf
+- Cline
+- Aider
+- 其他支持项目规则或自定义提示词的 coding agent
+
+推荐做法：
+
+1. 把 `skills/pixel-perfect-reference-ui-zh/SKILL.md` 复制到你的项目根目录，命名为 `PIXELCLONE.zh.md`。
+2. 如果你使用英文，把 `skills/pixel-perfect-reference-ui/SKILL.md` 复制到项目根目录，命名为 `PIXELCLONE.md`。
+3. 把 `scripts/` 目录复制到项目里的 `tools/pixelclone/`。
+4. 在你的 coding agent 提示词里写：
+
+中文：
 
 ```text
-Use $pixel-perfect-reference-ui. Reprocess this asset from the reference image. Remove connected near-background residue, feather the edge by 1-2px, preserve alpha, and verify there is no white/black halo in the browser.
+请先阅读并严格遵守 PIXELCLONE.zh.md，再进行前端 UI 复刻、视觉重构或素材替换。
 ```
 
-## How To Use With Other Coding Agents
-
-PixelClone Skill is written for Codex skills, but the workflow can be used with other coding tools.
-
-### Claude Code / Cursor / Windsurf / Cline / Aider
-
-Use the corresponding `SKILL.md` as a project instruction file or paste it into the agent's custom instructions.
-
-Recommended options:
-
-- Copy `skills/pixel-perfect-reference-ui/SKILL.md` into your project as `PIXELCLONE.md`.
-- Copy `skills/pixel-perfect-reference-ui-zh/SKILL.md` into your project as `PIXELCLONE.zh.md`.
-- Add a short instruction in your agent prompt: `Before frontend redesign work, read PIXELCLONE.md and follow it strictly.`
-- Keep the helper scripts in your repo under `tools/pixelclone/` or similar.
-
-For non-Codex tools, replace `Use $pixel-perfect-reference-ui` with:
+英文：
 
 ```text
-Read and strictly follow PIXELCLONE.md before making frontend UI changes.
+Read and strictly follow PIXELCLONE.md before making frontend UI replication or visual redesign changes.
 ```
 
-For Chinese users:
+## 推荐给 agent 的配置信息
 
-```text
-请先阅读并严格遵守 PIXELCLONE.zh.md，再进行前端 UI 复刻或素材替换。
-```
+为了获得更好的复刻效果，请在任务开始时提供：
 
-## Configuration Tips
+- 当前项目路径。
+- 你正在查看的本地 URL 和端口。
+- 总设计图或参考素材文件夹路径。
+- 目标页面、区域或组件名称。
+- 希望匹配的桌面视口宽度。
+- 当前页面截图，尤其是你认为“不像”的地方。
+- 任务类型：整页复刻、局部替换、布局修正、素材清理。
+- 是否允许整张背景图铺满，还是只能从参考图裁切局部素材。
 
-For best results, provide the agent with:
+## 面向哪些问题？
 
-- The exact project path.
-- The exact local URL and port you are viewing.
-- The total design reference path.
-- The target page or component name.
-- The intended desktop viewport width.
-- Any current screenshot showing mismatch.
-- Whether the task is full-page replication, partial replacement, or correction.
-- Whether full background replacement is allowed or only extracted assets may be used.
+PixelClone 适合解决：
 
-Recommended reference quality:
+- AI 生成网页设计图无法落地成真实前端。
+- Codex / Claude Code / Cursor 复刻设计图时喜欢自由发挥。
+- image2 生成的网页图和最终页面不够像。
+- 现有项目想换 UI，但不能破坏业务逻辑。
+- 页面整体格局不像参考图：宽度、section 高度、左右比例、留白不准。
+- 裁切素材有白边、黑边、脏边、截断或模糊。
+- UI 组件、贴图、按钮、背景、插画需要按参考图替换。
+- 弹窗、下拉菜单、功能面板被装饰层遮挡。
+- 移动端布局错位、素材重叠或文字溢出。
 
-- High-resolution image.
-- Full-page screenshot or complete artboard.
-- Clear section boundaries.
-- Complete decorative assets with no pre-existing crop damage.
-- Enough resolution for major hero illustrations and logos.
+## 核心原则
 
-## What Problems Can It Solve?
+PixelClone 不是让 AI 更会自由设计，而是让 AI 学会克制地复刻。
 
-PixelClone Skill is useful for:
+它告诉 coding agent：
 
-- Vibe coding teams that want AI-generated UI designs to become real websites.
-- Founders who generate landing page designs and need fast implementation.
-- Designers who want coding agents to follow a design image strictly.
-- Developers who need to restyle an existing app without breaking business logic.
-- Product teams that need visual consistency across pages.
-- UI repair tasks: clipping, overlap, wrong scale, wrong spacing, wrong section height.
-- Asset replacement tasks: logos, decorations, buttons, hero art, background images.
-- AI-generated design implementation pipelines.
+> 不要发明。先测量，再裁切，再摆放，再对照截图，最后保留业务行为。
 
-## Core Principle
-
-PixelClone is not a creativity booster. It is a replication discipline.
-
-The skill tells the agent:
-
-> Do not invent. Measure, crop, place, compare, and preserve behavior.
-
-That is how a beautiful AI-generated design becomes a real, usable frontend.
+这就是把一张漂亮的 AI 网页设计图，真正落地成可运行前端的关键。
 
 ## License
 
-Add your preferred license here.
+你可以根据自己的发布需求补充许可证。
