@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pixel Perfect Reference UI"
+  short_description: "Pixel-match visual web references safely"
+  default_prompt: "Use $pixel-perfect-reference-ui to rebuild this frontend from my total visual design reference without changing business behavior."
