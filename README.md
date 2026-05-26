@@ -1,7 +1,10 @@
 ﻿# PixelClone Skill｜像素级网页复刻 Skill
  （下面是我利用该skill完成的网页前端设计）
  <img width="2560" height="2239" alt="31c0719ef913aec7f7f0d06c1e1fc60e" src="https://github.com/user-attachments/assets/33fe9f0b-24b2-47f5-b018-a72bfa895e81" />
- <img width="1728" height="910" alt="cc34eea95c4313d785ce10bc0c274bf7" src="https://github.com/user-attachments/assets/1ddf3a07-f506-4206-a554-8a68c8cde3bb" />
+ <img width="2559" height="1398" alt="3b76410c1caf03c598a3dc0001998d45" src="https://github.com/user-attachments/assets/ed1e2af0-cf30-416e-9233-c2e2ec36f111" />
+ <img width="2560" height="2305" alt="c1dc3d28f8073883f88ffb62aa235783" src="https://github.com/user-attachments/assets/379fdef4-df58-4f9b-aeeb-b6bc0187cb8b" />
+
+
  <img width="2432" height="1280" alt="4a7113f8934b02ce6676d3260b38f3ce" src="https://github.com/user-attachments/assets/165e3e4b-245f-4288-b3f2-364f7256ecf9" />
  <img width="2432" height="1280" alt="6d27bed77f2bebbeece25c70b6c9a68d" src="https://github.com/user-attachments/assets/62b1d8ea-5655-464f-a598-67f36e47b6f6" />
 使用方法：利用gptimage2 或者是figma生成你想要的网页风格设计图，如下：<img width="1781" height="1143" alt="image" src="https://github.com/user-attachments/assets/d2f4e2a9-9c4b-4260-afb6-dd4593614558" />
