@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "caseId": "example",
+  "round": "r0",
+  "skillVersion": null,
+  "model": null,
+  "inputTrack": "screenshot-only",
+  "requirements": [
+    {"id":"navigation", "status":"pending", "evidence":null},
+    {"id":"visual-tolerance", "status":"pending", "evidence":null},
+    {"id":"motion", "status":"pending", "evidence":null}
+  ],
+  "humanReview": null,
+  "runs": [{"caseId":"example", "status":"pending", "attempts":[]}]
+}

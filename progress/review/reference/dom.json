@@ -1,0 +1,92 @@
+{
+  "text": "Based in London\nBorn in Tokyo\nDesign-driven\ncreative agency\nBranding, digital\nand communications\nRECENT WORK\nONITSUKA TIGER ‣ FINISH LINE CAFE — POP-UP\nSPATIAL\nNKORA COFFEE ‣ BRAND IDENTITY\nBRAND DESIGN\nBARBOUR X WALLACE & GROMIT ‣ CHRISTMAS ACTIVATION\nSPATIAL\nCAMPAIGN\nOUTFRY — KOREAN FRIED CHICKEN ‣ BRANDING\nBRAND DESIGN\nDISCOVER ALL PROJECTS\n→\nHOME\nWORK\nSERVICES\nTEAM\nCONTACT\nPRESS & NEWS\n10:47 AM\n07:47 PM\n06:47 AM\nWE WOULD LOVE TO HEAR FROM YOU.\n\nFeel free to reach out if you want to collaborate with us, or simply have a chat.\n\ncontact@monopo.london →\nOUR ADDRESS\n\nUnit 16C, Perseverance Works\n38 Kingsland Road\nE2 8DD, London\nUnited Kingdom\n\nVAT: 319656475\nCompany no. 11843590\nRegistered in England & Wales\n\nFOLLOW US\nInstagram\nLinkedin\n↗\nMONOPO TKY\n↗\nMONOPO NYC\n↗\nPOWERED BY TOKYO\nHOME\nWORK\nSERVICES\nTEAM\nCONTACT\nPRESS & NEWS\nPRIVACY POLICY\n© MONOPO LONDON LTD 2024 All rights reserved\nTOP ↑\nHOME\nWORK\nSERVICES\nTEAM\nCONTACT\nPRESS & NEWS\n10:47 AM\n07:47 PM\n06:47 AM\n\nThis website uses cookies.\nLearn more.\n\nACCEPT",
+  "fonts": [
+    {
+      "family": "Roobert",
+      "status": "loaded"
+    },
+    {
+      "family": "Roobert",
+      "status": "loaded"
+    },
+    {
+      "family": "Roobert",
+      "status": "unloaded"
+    },
+    {
+      "family": "Roobert",
+      "status": "unloaded"
+    },
+    {
+      "family": "Roobert",
+      "status": "loaded"
+    },
+    {
+      "family": "Roobert",
+      "status": "unloaded"
+    },
+    {
+      "family": "Noto Sans CJK JP",
+      "status": "loaded"
+    }
+  ],
+  "elements": [
+    {
+      "tag": "CANVAS",
+      "cls": "c-PixiApp-canvas",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "top": 0,
+        "right": 1440,
+        "bottom": 900,
+        "left": 0
+      }
+    },
+    {
+      "tag": "H1",
+      "cls": "c-PixiIntro-title t-h1",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      }
+    },
+    {
+      "tag": "HEADER",
+      "cls": "c-Header",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 113.125,
+        "top": 0,
+        "right": 1440,
+        "bottom": 113.125,
+        "left": 0
+      }
+    },
+    {
+      "tag": "HEADER",
+      "cls": "c-Header is-navigation",
+      "rect": {
+        "x": 0,
+        "y": -228.125,
+        "width": 1440,
+        "height": 228.125,
+        "top": -228.125,
+        "right": 1440,
+        "bottom": 0,
+        "left": 0
+      }
+    }
+  ],
+  "styles": []
+}

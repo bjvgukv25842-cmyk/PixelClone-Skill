@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "scope": "Reference desktop heading, circular lens and immediate background; independent skill application check, not reproduction or acceptance run",
+  "inputTrack": "source-assisted",
+  "inputTrackReason": "User-supplied runtime object dump and submitted shader source are used in addition to screenshot. This must not be scored against screenshot-only or resource-only arms.",
+  "permissions": {
+    "originalSiteReading": "authorized by task",
+    "networkReadingUsed": false,
+    "originalApplicationBundleUsed": false,
+    "holdoutOrCaseFilesRead": false
+  },
+  "target": {
+    "referenceUrl": null,
+    "referenceUrlStatus": "Authorized but no exact URL supplied in scoped inputs; do not guess from logo",
+    "implementationUrl": null,
+    "runtimePortVerified": false,
+    "referencePixelSize": [
+      1440,
+      900
+    ],
+    "viewportCss": null,
+    "devicePixelRatio": null,
+    "browser": null
+  },
+  "provenance": [
+    {
+      "path": "work/reference/desktop.png",
+      "sha256": "dd7e30120088b82851904f0884f8caf20a21490a473a56430a801297521e26b8"
+    },
+    {
+      "path": "work/round-1/source/probe.json",
+      "sha256": "0fbf876b1a9096894df91360c52dccb651408532c1207ba7dad010f6214976ba"
+    },
+    {
+      "path": "work/round-1/source/runtime.json",
+      "sha256": "998e6b400304fd1ead68ca50f03a96a5f51b5011dc305c014f6758cd41e87c09"
+    }
+  ],
+  "frozenSkillInputs": [
+    {
+      "path": "skills/pixel-perfect-reference-ui/SKILL.md",
+      "sha256": "26e08b7164c4a4b43a17f25af8fb708e7e9255a2665377d38336f7a812bb5dc8"
+    },
+    {
+      "path": "toolkit/references/render-effects.md",
+      "sha256": "dfde64d16bc76f8a5a495901351ab78a8651976134801b7a0a0cec32d6641a9f"
+    },
+    {
+      "path": "toolkit/references/motion.md",
+      "sha256": "651d000d35a589b7fe8a45c0b31a45c1ec774a4c92cd74ebcf75f39fd16bad83"
+    },
+    {
+      "path": "toolkit/references/evaluation.md",
+      "sha256": "d2864db23a65b5447b6ea8c4ca5578e4efab6d6b344d0e833fd124d4e8819532"
+    },
+    {
+      "path": "toolkit/references/commands.md",
+      "sha256": "9ed7aa0cd4bdd1bfc974c7990599fd94130ab62a3a0540f863b1073538aa6d2b"
+    },
+    {
+      "path": "skills/pixel-perfect-reference-ui/references/evidence.md",
+      "sha256": "22fde36d428b7ef765fe36e7dd8261f095822966ca2d2ae505d198799a7b7ed8"
+    }
+  ],
+  "layers": [
+    {
+      "role": "background",
+      "renderer": "WebGL/WebGL2 context plus procedural gradient/noise shader submission; exact visible pipeline unverified",
+      "content": {
+        "color1": "#16254b",
+        "color2": "#23418a",
+        "color3": "#aadfd9",
+        "color4": "#e64f0f",
+        "colorsize": "0.75",
+        "colorspacing": "0.52",
+        "colorrotation": "-0.381592653589793",
+        "colorspread": "4.52",
+        "coloroffset": "-0.7741174697875977,-0.20644775390624992",
+        "displacement": "4.66",
+        "seed": "-0.06",
+        "position": "-0.2816110610961914,-0.43914794921875",
+        "zoom": "0.72",
+        "spacing": "4.27"
+      },
+      "measuredBounds": null,
+      "boundsSpace": "captured renderer coordinates; CSS/DPR mapping unverified",
+      "sourceUrl": null,
+      "sourceHash": null,
+      "blend": "unverified",
+      "mask": "unverified",
+      "filterOrder": "unverified",
+      "evidence": [
+        "work/round-1/source/probe.json#/contexts",
+        "work/round-1/source/probe.json#/shaders",
+        "work/reference/desktop.png"
+      ]
+    },
+    {
+      "role": "base English heading",
+      "renderer": "Pixi candidate, runtime version 6.2.0",
+      "content": {
+        "line_one": "We are a brand",
+        "line_two": "of collective",
+        "line_three": "creativity"
+      },
+      "measuredBounds": {
+        "x": 368.12799072265625,
+        "y": 323.6999969482422,
+        "width": 703.7440185546875,
+        "height": 252.60000610351562,
+        "scale": {
+          "x": 1,
+          "y": 1
+        }
+      },
+      "boundsSpace": "captured renderer coordinates; CSS/DPR mapping unverified",
+      "sourceUrl": null,
+      "sourceHash": null,
+      "blend": "unverified",
+      "mask": "unverified",
+      "filterOrder": "unverified",
+      "evidence": [
+        "work/round-1/source/runtime.json#/0/englishContainer",
+        "work/reference/desktop.png"
+      ]
+    },
+    {
+      "role": "Japanese effect text",
+      "renderer": "Pixi candidate",
+      "content": {
+        "line_one": "私たちは",
+        "line_two": "創造性を結集した",
+        "line_three": "ブランド"
+      },
+      "measuredBounds": {
+        "x": 316.62799072265625,
+        "y": 331.1999969482422,
+        "width": 806.7440185546875,
+        "height": 237.60000610351562,
+        "scale": {
+          "x": 1,
+          "y": 1
+        }
+      },
+      "boundsSpace": "captured renderer coordinates; CSS/DPR mapping unverified",
+      "sourceUrl": null,
+      "sourceHash": null,
+      "blend": "unverified",
+      "mask": "unverified",
+      "filterOrder": "unverified",
+      "evidence": [
+        "work/round-1/source/runtime.json#/0/japaneseContainer",
+        "work/reference/desktop.png"
+      ]
+    },
+    {
+      "role": "effect container",
+      "renderer": "Pixi candidate",
+      "content": null,
+      "measuredBounds": {
+        "x": 316.62799072265625,
+        "y": 331.1999969482422,
+        "width": 806.7440185546875,
+        "height": 237.60000610351562,
+        "scale": {
+          "x": 1,
+          "y": 1
+        }
+      },
+      "boundsSpace": "captured renderer coordinates; CSS/DPR mapping unverified",
+      "sourceUrl": null,
+      "sourceHash": null,
+      "blend": "unverified",
+      "mask": "unverified",
+      "filterOrder": "unverified",
+      "evidence": [
+        "work/round-1/source/runtime.json#/0/containerEffect"
+      ],
+      "candidateFilters": [
+        "radial bulge/refraction",
+        "map displacement",
+        "RGB channel offsets",
+        "sprite mask"
+      ]
+    },
+    {
+      "role": "lens surface",
+      "renderer": "unverified",
+      "content": null,
+      "measuredBounds": {
+        "x": 720,
+        "y": 450,
+        "width": 250,
+        "height": 250,
+        "scale": {
+          "x": 1,
+          "y": 1
+        }
+      },
+      "boundsSpace": "captured renderer coordinates; CSS/DPR mapping unverified",
+      "sourceUrl": null,
+      "sourceHash": null,
+      "blend": "unverified",
+      "mask": "unverified",
+      "filterOrder": "unverified",
+      "evidence": [
+        "work/round-1/source/runtime.json#/0/lense",
+        "work/reference/desktop.png"
+      ]
+    },
+    {
+      "role": "effect mask",
+      "renderer": "unverified",
+      "content": null,
+      "measuredBounds": {
+        "x": 720,
+        "y": 450,
+        "width": 250,
+        "height": 250,
+        "scale": {
+          "x": 1,
+          "y": 1
+        }
+      },
+      "boundsSpace": "captured renderer coordinates; CSS/DPR mapping unverified",
+      "sourceUrl": null,
+      "sourceHash": null,
+      "blend": "unverified",
+      "mask": "unverified",
+      "filterOrder": "unverified",
+      "evidence": [
+        "work/round-1/source/runtime.json#/0/effectMask"
+      ],
+      "visibility": "Compositing input rather than standalone visible layer; circular boundary visible in screenshot"
+    },
+    {
+      "role": "displacement map sprite",
+      "renderer": "unverified",
+      "content": null,
+      "measuredBounds": {
+        "x": 720,
+        "y": 450,
+        "width": 250,
+        "height": 250,
+        "scale": {
+          "x": 1,
+          "y": 1
+        }
+      },
+      "boundsSpace": "captured renderer coordinates; CSS/DPR mapping unverified",
+      "sourceUrl": null,
+      "sourceHash": null,
+      "blend": "unverified",
+      "mask": "unverified",
+      "filterOrder": "unverified",
+      "evidence": [
+        "work/round-1/source/runtime.json#/0/displacementSprite"
+      ],
+      "visibility": "Compositing input; map pixels/resource not supplied"
+    },
+    {
+      "role": "navigation, cookie control, footer",
+      "renderer": "Preserve real DOM controls in replica; original DOM ownership unverified",
+      "content": "Screenshot text outside heading",
+      "measuredBounds": null,
+      "boundsSpace": "captured renderer coordinates; CSS/DPR mapping unverified",
+      "sourceUrl": null,
+      "sourceHash": null,
+      "blend": "unverified",
+      "mask": "unverified",
+      "filterOrder": "unverified",
+      "evidence": [
+        "work/reference/desktop.png"
+      ]
+    }
+  ],
+  "typography": {
+    "englishDeclared": {
+      "fontFamily": "Roobert",
+      "fontSize": "86.24999999951999px",
+      "fill": "#FFFFFF",
+      "padding": 100,
+      "trim": true
+    },
+    "japaneseDeclared": {
+      "fontFamily": "Noto Sans CJK JP",
+      "fontSize": "72px",
+      "fill": "#FFFFFF",
+      "padding": 100,
+      "trim": true
+    },
+    "actualFontResources": null,
+    "fontHashes": null,
+    "glyphCoverage": "unverified",
+    "actualPlatformFonts": "unverified",
+    "ownership": {
+      "referenceVisualText": "Pixi runtime text objects supported by dump; exact texture generation unverified",
+      "referenceAccessibleDom": "unverified",
+      "replicaRequirement": "Keep meaningful heading in accessible DOM; hide duplicate GPU visual copy from accessibility tree"
+    },
+    "rasterResolution": null,
+    "devicePixelRatio": null,
+    "paddingTrimEvidence": "work/round-1/source/runtime.json#/0/fontStyle",
+    "lineOrigins": {
+      "lineOne": {
+        "x": 0,
+        "y": 0,
+        "width": 577,
+        "height": 62,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "text": "We are a brand",
+        "fontSize": "86.24999999951999px"
+      },
+      "lineTwo": {
+        "x": 237.74400000000003,
+        "y": 86.8,
+        "width": 466,
+        "height": 62,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "text": "of collective",
+        "fontSize": "86.24999999951999px"
+      },
+      "lineThree": {
+        "x": 149.99040000000002,
+        "y": 173.6,
+        "width": 351,
+        "height": 79,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "text": "creativity",
+        "fontSize": "86.24999999951999px"
+      },
+      "lineOneJP": {
+        "x": 0,
+        "y": 0,
+        "width": 284,
+        "height": 69,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "text": "私たちは",
+        "fontSize": "72px"
+      },
+      "lineTwoJP": {
+        "x": 237.74400000000003,
+        "y": 86.8,
+        "width": 569,
+        "height": 71,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "text": "創造性を結集した",
+        "fontSize": "72px"
+      },
+      "lineThreeJP": {
+        "x": 149.99040000000002,
+        "y": 173.6,
+        "width": 273,
+        "height": 64,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "text": "ブランド",
+        "fontSize": "72px"
+      }
+    },
+    "baseline": "unverified",
+    "postProcessing": "Candidate radial refraction, displacement, RGB offsets and mask from submitted shaders; affected layer and order unverified",
+    "userReportedFontLoaded": true,
+    "reportLimit": "User report and runtime fontFamily declarations do not establish actual glyph face, coverage or raster equivalence"
+  },
+  "response": {
+    "trigger": {
+      "value": "pointer movement changes glyph shape",
+      "evidence": "task user report",
+      "observationStatus": "reported; no continuous recording inspected"
+    },
+    "pointerCoordinateSpace": "unverified",
+    "targetMapping": "unverified",
+    "smoothingInertia": "unverified",
+    "pointerPosition": null,
+    "smoothedPosition": null,
+    "snapshotLens": {
+      "x": 720,
+      "y": 450,
+      "width": 250,
+      "height": 250,
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "radius": {
+      "value": 125,
+      "status": "inferred from 250 diameter if circle units are unscaled; filter radius itself unknown"
+    },
+    "displacedLayer": "Likely Japanese effect text; mapping unverified",
+    "filterStrength": null,
+    "filterOrder": null,
+    "entry": "unverified",
+    "exit": "unverified",
+    "reverse": "unverified",
+    "settling": "unverified",
+    "touch": "unverified",
+    "reducedMotion": "unverified",
+    "staticVisualObservation": "Central circular region displays Japanese glyphs and RGB fringes over English heading; screenshot establishes appearance only"
+  },
+  "checks": [
+    {
+      "id": "reference-static-lens-and-language-layer-evidence",
+      "status": "pass",
+      "scope": "evidence inventory only",
+      "evidence": [
+        "work/reference/desktop.png",
+        "work/round-1/source/runtime.json"
+      ],
+      "note": "Screenshot visually inspected; no replica matching implied"
+    },
+    {
+      "id": "source-submits-deformation-and-rgb-mask-shaders",
+      "status": "pass",
+      "scope": "evidence inventory only",
+      "evidence": [
+        "work/round-1/source/probe.json"
+      ],
+      "note": "Submission is verified from probe; compilation, layer attachment and visible effect are not"
+    },
+    {
+      "id": "font-availability-and-actual-glyph-coverage",
+      "status": "unverified",
+      "evidence": [
+        "work/round-1/source/runtime.json"
+      ],
+      "note": "Declarations and user report only; no resource URL/hash or glyph/platform-font check"
+    },
+    {
+      "id": "replica-pointer-delivery",
+      "status": "unverified",
+      "evidence": [],
+      "note": "Moving div is user-reported; no instrumented replica inspected"
+    },
+    {
+      "id": "replica-glyph-deformation",
+      "status": "unverified",
+      "evidence": [],
+      "note": "Moving div alone cannot satisfy this requirement; implementation and matched glyph frames absent"
+    },
+    {
+      "id": "layer-filter-order-and-map-resource",
+      "status": "unverified",
+      "evidence": [
+        "work/round-1/source/probe.json",
+        "work/round-1/source/runtime.json"
+      ]
+    },
+    {
+      "id": "reference-replica-continuous-response-match",
+      "status": "unverified",
+      "evidence": []
+    },
+    {
+      "id": "reference-stability-and-time-control",
+      "status": "unverified",
+      "evidence": []
+    },
+    {
+      "id": "desktop-mobile-dpr-touch-reduced-motion",
+      "status": "unverified",
+      "evidence": []
+    },
+    {
+      "id": "navigation-forms-accessibility-existing-checks",
+      "status": "unverified",
+      "evidence": []
+    }
+  ],
+  "probeLimits": [
+    "Submitted shader strings do not prove compile/link success, use or visible pixel contribution",
+    "No linkage graph or uniform values in these inputs",
+    "Context names do not establish geometric 3D",
+    "Probe may perturb timing; requires paired uninstrumented capture",
+    "Workers/OffscreenCanvas, WebGPU and other frames not established"
+  ],
+  "nextRenderingAction": {
+    "first": "Resolve original and replica URLs, CSS viewport/DPR, actual font/map resources and filter attachment/order using authorized reference reading. Record all expanded inputs.",
+    "then": "Render unfiltered English/Japanese text independently at captured origins with verified fonts and raster resolution. Compare tight glyph crops. Build the observed Pixi/Canvas-WebGL layer/filter graph instead of treating circle translation as refraction.",
+    "adapter": "Expose actual pointer and smoothed state separately; settled state setter must update both and render; live playback preserves transient.",
+    "replay": "Traverse glyph -> blank area -> same glyph in reverse; sample 0/25/50/75/100%, post-stop and exit; record intended coordinates and actual elapsed times, plus continuous recording.",
+    "regression": "At fixed pointer toggle displacement while holding other inputs fixed. Require a changed tight glyph region and stable unrelated background. This establishes causal deformation only; compare corresponding reference frames separately.",
+    "grading": "Establish reference stability with three captures. Dynamic scores remain diagnostic without synchronized state. No visual or functional pass in this check."
+  },
+  "workflowAssessment": {
+    "executable": true,
+    "extent": "Contract creation and concrete next experiment were executable from canonical references. Full reproduction not run.",
+    "ambiguities": [
+      "Main SKILL input modes omit source-assisted while render-effects adds it; source-assisted selected because shader/runtime source evidence was used.",
+      "Packaged render-effects.md was missing; task explicitly allowed canonical toolkit references. Sync required before installed-skill validation.",
+      "No strict render-contract schema or unknown representation specified; this artifact uses null/explicit unverified strings.",
+      "Reference URL, CSS viewport, DPR and exact font/map resources were absent from scoped input files."
+    ]
+  },
+  "humanReview": null,
+  "visualPass": false,
+  "completionClaim": false
+}

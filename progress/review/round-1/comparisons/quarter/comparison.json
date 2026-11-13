@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "settings": {
+    "threshold": 0.1,
+    "maxDiffRatio": 0.01,
+    "includeAA": false
+  },
+  "exact": false,
+  "withinTolerance": true,
+  "page": {
+    "count": 1950,
+    "ratio": 0.0015046296296296296,
+    "rawDifferentPixels": 5636,
+    "pass": true
+  },
+  "regions": [
+    {
+      "name": "heading",
+      "count": 0,
+      "ratio": 0,
+      "rawDifferentPixels": 863,
+      "pass": true
+    },
+    {
+      "name": "lens",
+      "count": 0,
+      "ratio": 0,
+      "rawDifferentPixels": 858,
+      "pass": true
+    },
+    {
+      "name": "navigation",
+      "count": 1246,
+      "ratio": 0.009849802371541502,
+      "rawDifferentPixels": 1956,
+      "pass": true
+    },
+    {
+      "name": "footer-copy",
+      "count": 209,
+      "ratio": 0.004917647058823529,
+      "rawDifferentPixels": 1617,
+      "pass": true
+    }
+  ],
+  "reference": "../outputs/pixelclone-review/round-1/reference/frames/quarter.png",
+  "actual": "../outputs/pixelclone-review/round-1/candidate/frames/quarter.png"
+}

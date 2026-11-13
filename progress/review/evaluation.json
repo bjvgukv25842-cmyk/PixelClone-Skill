@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "developmentCase": "monopo",
+  "round": "r0",
+  "capturedAt": "2026-10-29",
+  "packagedAt": "2026-11-03",
+  "humanReview": null,
+  "releaseStatus": "candidate-failed-fidelity-gate",
+  "imageDiagnostics": {
+    "control": {
+      "pixelMismatchRatio": 0.4362600308641975,
+      "withinTolerance": false,
+      "exact": false,
+      "regions": [
+        {
+          "name": "hero",
+          "count": 143947,
+          "ratio": 0.548578506097561,
+          "rawDifferentPixels": 254597,
+          "pass": false
+        },
+        {
+          "name": "navigation",
+          "count": 22188,
+          "ratio": 0.175399209486166,
+          "rawDifferentPixels": 104222,
+          "pass": false
+        }
+      ]
+    },
+    "old": {
+      "pixelMismatchRatio": 0.07918904320987655,
+      "withinTolerance": false,
+      "exact": false,
+      "regions": [
+        {
+          "name": "hero",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "navigation",
+          "count": 10778,
+          "ratio": 0.08520158102766798,
+          "rawDifferentPixels": 103407,
+          "pass": false
+        }
+      ]
+    },
+    "candidate": {
+      "pixelMismatchRatio": 0.524420524691358,
+      "withinTolerance": false,
+      "exact": false,
+      "regions": [
+        {
+          "name": "hero",
+          "count": 168440,
+          "ratio": 0.6419207317073171,
+          "rawDifferentPixels": 252450,
+          "pass": false
+        },
+        {
+          "name": "navigation",
+          "count": 29014,
+          "ratio": 0.2293596837944664,
+          "rawDifferentPixels": 89181,
+          "pass": false
+        }
+      ]
+    }
+  },
+  "holdoutsExecuted": 0,
+  "holdoutsScheduled": 12,
+  "caveats": [
+    "Pixel mismatch is not perceptual similarity.",
+    "All arms fail faithful reconstruction; old arm embeds screenshot crops.",
+    "Candidate trial interrupted and resumed; initial screenshots overwritten during correction.",
+    "Delegated task allowed labeled inference; strict skill prohibits unrequested substitution. Treat as development evidence, not clean controlled improvement.",
+    "Motion previews are sampled pointer replays, not synchronized animation scores."
+  ]
+}

@@ -1,0 +1,6 @@
+import {chromium} from 'playwright';import fs from 'node:fs/promises';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+try{const page=await browser.newPage({viewport:{width:1440,height:900}});await page.goto('https://monopo.london/',{waitUntil:'domcontentloaded'});await page.waitForTimeout(8000);
+const result=await page.evaluate(()=>{
+const found=[];const seen=new Set();function walk(c){if(!c||seen.has(c))return;seen.add(c);if(c.$options.name==='PixiIntro'){const o={name:c.$options.name,title:c.title,titleJapanese:c.titleJapanese,options:c.options,version:c.$PIXI.VERSION,fontStyle:c.fontStyle,fontStyleJP:c.fontStyleJP};for(const key of ['englishContainer','japaneseContainer','containerEffect','lineOne','lineTwo','lineThree','lineOneJP','lineTwoJP','lineThreeJP','lense','effectMask','displacementSprite']){const x=c[key];if(x)o[key]={x:x.x,y:x.y,width:x.width,height:x.height,scale:{x:x.scale.x,y:x.scale.y},text:x.text,fontSize:x.style?.fontSize};}found.push(o);}for(const x of c.$children??[])walk(x);}walk(document.querySelector('#__nuxt').__vue__);return found;});await fs.writeFile('work/round-1/source/runtime.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));
+}finally{await browser.close();}

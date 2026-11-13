@@ -1,0 +1,330 @@
+[
+  {
+    "state": "initial",
+    "page": {
+      "count": 2190,
+      "ratio": 0.0016898148148148148,
+      "rawDifferentPixels": 4767,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      },
+      {
+        "name": "lens",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      },
+      {
+        "name": "navigation",
+        "count": 1144,
+        "ratio": 0.009043478260869564,
+        "rawDifferentPixels": 1956,
+        "pass": true
+      },
+      {
+        "name": "footer-copy",
+        "count": 346,
+        "ratio": 0.008141176470588235,
+        "rawDifferentPixels": 1611,
+        "pass": true
+      }
+    ],
+    "exact": false,
+    "withinTolerance": true
+  },
+  {
+    "state": "left",
+    "page": {
+      "count": 1874,
+      "ratio": 0.0014459876543209877,
+      "rawDifferentPixels": 4773,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      },
+      {
+        "name": "lens",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      },
+      {
+        "name": "navigation",
+        "count": 1243,
+        "ratio": 0.00982608695652174,
+        "rawDifferentPixels": 1956,
+        "pass": true
+      },
+      {
+        "name": "footer-copy",
+        "count": 148,
+        "ratio": 0.0034823529411764707,
+        "rawDifferentPixels": 1617,
+        "pass": true
+      }
+    ],
+    "exact": false,
+    "withinTolerance": true
+  },
+  {
+    "state": "quarter",
+    "page": {
+      "count": 1950,
+      "ratio": 0.0015046296296296296,
+      "rawDifferentPixels": 5636,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 863,
+        "pass": true
+      },
+      {
+        "name": "lens",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 858,
+        "pass": true
+      },
+      {
+        "name": "navigation",
+        "count": 1246,
+        "ratio": 0.009849802371541502,
+        "rawDifferentPixels": 1956,
+        "pass": true
+      },
+      {
+        "name": "footer-copy",
+        "count": 209,
+        "ratio": 0.004917647058823529,
+        "rawDifferentPixels": 1617,
+        "pass": true
+      }
+    ],
+    "exact": false,
+    "withinTolerance": true
+  },
+  {
+    "state": "center",
+    "page": {
+      "count": 2108,
+      "ratio": 0.0016265432098765433,
+      "rawDifferentPixels": 4773,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      },
+      {
+        "name": "lens",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      },
+      {
+        "name": "navigation",
+        "count": 1246,
+        "ratio": 0.009849802371541502,
+        "rawDifferentPixels": 1956,
+        "pass": true
+      },
+      {
+        "name": "footer-copy",
+        "count": 224,
+        "ratio": 0.005270588235294118,
+        "rawDifferentPixels": 1617,
+        "pass": true
+      }
+    ],
+    "exact": false,
+    "withinTolerance": true
+  },
+  {
+    "state": "three-quarter",
+    "page": {
+      "count": 2186,
+      "ratio": 0.0016867283950617283,
+      "rawDifferentPixels": 4772,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      },
+      {
+        "name": "lens",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      },
+      {
+        "name": "navigation",
+        "count": 1240,
+        "ratio": 0.009802371541501976,
+        "rawDifferentPixels": 1955,
+        "pass": true
+      },
+      {
+        "name": "footer-copy",
+        "count": 281,
+        "ratio": 0.006611764705882353,
+        "rawDifferentPixels": 1617,
+        "pass": true
+      }
+    ],
+    "exact": false,
+    "withinTolerance": true
+  },
+  {
+    "state": "right",
+    "page": {
+      "count": 2214,
+      "ratio": 0.0017083333333333334,
+      "rawDifferentPixels": 5136,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 129,
+        "pass": true
+      },
+      {
+        "name": "lens",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 27,
+        "pass": true
+      },
+      {
+        "name": "navigation",
+        "count": 1218,
+        "ratio": 0.009628458498023715,
+        "rawDifferentPixels": 1981,
+        "pass": true
+      },
+      {
+        "name": "footer-copy",
+        "count": 315,
+        "ratio": 0.007411764705882353,
+        "rawDifferentPixels": 1618,
+        "pass": true
+      }
+    ],
+    "exact": false,
+    "withinTolerance": true
+  },
+  {
+    "state": "reverse",
+    "page": {
+      "count": 2108,
+      "ratio": 0.0016265432098765433,
+      "rawDifferentPixels": 6079,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 443,
+        "pass": true
+      },
+      {
+        "name": "lens",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 174,
+        "pass": true
+      },
+      {
+        "name": "navigation",
+        "count": 1246,
+        "ratio": 0.009849802371541502,
+        "rawDifferentPixels": 2055,
+        "pass": true
+      },
+      {
+        "name": "footer-copy",
+        "count": 224,
+        "ratio": 0.005270588235294118,
+        "rawDifferentPixels": 1642,
+        "pass": true
+      }
+    ],
+    "exact": false,
+    "withinTolerance": true
+  },
+  {
+    "state": "exit",
+    "page": {
+      "count": 2475,
+      "ratio": 0.0019097222222222222,
+      "rawDifferentPixels": 5460,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 51,
+        "pass": true
+      },
+      {
+        "name": "lens",
+        "count": 410,
+        "ratio": 0.012148148148148148,
+        "rawDifferentPixels": 995,
+        "pass": false
+      },
+      {
+        "name": "navigation",
+        "count": 1108,
+        "ratio": 0.008758893280632412,
+        "rawDifferentPixels": 2042,
+        "pass": true
+      },
+      {
+        "name": "footer-copy",
+        "count": 741,
+        "ratio": 0.01743529411764706,
+        "rawDifferentPixels": 1649,
+        "pass": false
+      }
+    ],
+    "exact": false,
+    "withinTolerance": false
+  }
+]

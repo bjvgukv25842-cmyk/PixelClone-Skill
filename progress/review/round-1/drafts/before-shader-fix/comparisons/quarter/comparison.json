@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "settings": {
+    "threshold": 0.1,
+    "maxDiffRatio": 0.01,
+    "includeAA": false
+  },
+  "exact": false,
+  "withinTolerance": false,
+  "page": {
+    "count": 16609,
+    "ratio": 0.012815586419753087,
+    "rawDifferentPixels": 27682,
+    "pass": false
+  },
+  "regions": [
+    {
+      "name": "heading",
+      "count": 6279,
+      "ratio": 0.026404541631623212,
+      "rawDifferentPixels": 13035,
+      "pass": false
+    },
+    {
+      "name": "lens-center",
+      "count": 3257,
+      "ratio": 0.052112,
+      "rawDifferentPixels": 6897,
+      "pass": false
+    }
+  ],
+  "reference": "../outputs/pixelclone-review/round-1/reference/frames/quarter.png",
+  "actual": "../outputs/pixelclone-review/round-1/candidate/frames/quarter.png"
+}

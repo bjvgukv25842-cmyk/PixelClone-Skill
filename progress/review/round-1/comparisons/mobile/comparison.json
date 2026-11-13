@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "dimensions": {
+    "width": 390,
+    "height": 844
+  },
+  "settings": {
+    "threshold": 0.1,
+    "maxDiffRatio": 0.01,
+    "includeAA": false
+  },
+  "exact": false,
+  "withinTolerance": false,
+  "page": {
+    "count": 1675,
+    "ratio": 0.0050887106574310365,
+    "rawDifferentPixels": 6370,
+    "pass": true
+  },
+  "regions": [
+    {
+      "name": "heading",
+      "count": 906,
+      "ratio": 0.018377281947261664,
+      "rawDifferentPixels": 4133,
+      "pass": false
+    },
+    {
+      "name": "navigation",
+      "count": 674,
+      "ratio": 0.021602564102564104,
+      "rawDifferentPixels": 1829,
+      "pass": false
+    }
+  ],
+  "reference": "../outputs/pixelclone-review/round-1/reference/mobile/screenshot.png",
+  "actual": "../outputs/pixelclone-review/round-1/candidate/mobile/screenshot.png"
+}

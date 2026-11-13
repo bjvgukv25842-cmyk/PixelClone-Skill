@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "settings": {
+    "threshold": 0.1,
+    "maxDiffRatio": 0.01,
+    "includeAA": false
+  },
+  "exact": false,
+  "withinTolerance": false,
+  "page": {
+    "count": 2475,
+    "ratio": 0.0019097222222222222,
+    "rawDifferentPixels": 5460,
+    "pass": true
+  },
+  "regions": [
+    {
+      "name": "heading",
+      "count": 0,
+      "ratio": 0,
+      "rawDifferentPixels": 51,
+      "pass": true
+    },
+    {
+      "name": "lens",
+      "count": 410,
+      "ratio": 0.012148148148148148,
+      "rawDifferentPixels": 995,
+      "pass": false
+    },
+    {
+      "name": "navigation",
+      "count": 1108,
+      "ratio": 0.008758893280632412,
+      "rawDifferentPixels": 2042,
+      "pass": true
+    },
+    {
+      "name": "footer-copy",
+      "count": 741,
+      "ratio": 0.01743529411764706,
+      "rawDifferentPixels": 1649,
+      "pass": false
+    }
+  ],
+  "reference": "../outputs/pixelclone-review/round-1/reference/frames/exit.png",
+  "actual": "../outputs/pixelclone-review/round-1/candidate/frames/exit.png"
+}

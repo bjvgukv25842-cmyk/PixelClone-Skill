@@ -1,0 +1,87 @@
+[
+  {
+    "url": "https://monopo.london/arrow_scroll.png",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://monopo.london/footer-circles.svg",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://monopo.london/fonts/Roobert-Bold.woff2",
+    "type": "font",
+    "status": 200
+  },
+  {
+    "url": "https://monopo.london/fonts/Roobert-Regular.woff2",
+    "type": "font",
+    "status": 200
+  },
+  {
+    "url": "https://monopo.london/lense.png",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://monopo.london/displace.png",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://monopo.london/fonts/NotoSansCJKjp-Regular.woff2",
+    "type": "font",
+    "status": 200
+  },
+  {
+    "url": "https://monopo.london/mask.png",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://monopo.london/fonts/Roobert-RegularItalic.woff2",
+    "type": "font",
+    "status": 200
+  },
+  {
+    "url": "https://images.prismic.io/monopolondon/Zw7EpYF3NbkBXeiv_OUTFRY_Brand-identity_Homepage_Cover_1900px.jpg?auto=format,compress&rect=158,0,1584,1188&w=4&h=3",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://images.prismic.io/monopolondon/aLckPWGNHVfTOiDn_Onitsuka_Tiger_Finish-Line-Cafe_London_pop-up_Homepage_Cover.jpg?auto=format,compress&rect=158,0,1584,1188&w=4&h=3",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://images.prismic.io/monopolondon/aLckPWGNHVfTOiDn_Onitsuka_Tiger_Finish-Line-Cafe_London_pop-up_Homepage_Cover.jpg?auto=format,compress&rect=0,0,1900,1188&w=950&h=594",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://images.prismic.io/monopolondon/aNJt_p5xUNkB1Amn_Nkora_Coffee_Branding_Homepage-Cover.jpg?auto=format,compress&rect=158,0,1584,1188&w=4&h=3",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://images.prismic.io/monopolondon/bQozchbmU1yjco9w_Barbour_Wallace%26Gromit_Christmas-Activation_HPcover.jpg?auto=format,compress&rect=158,0,1584,1188&w=4&h=3",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://images.prismic.io/monopolondon/aNJt_p5xUNkB1Amn_Nkora_Coffee_Branding_Homepage-Cover.jpg?auto=format,compress&rect=0,0,1900,1188&w=950&h=594",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://images.prismic.io/monopolondon/Zw7EpYF3NbkBXeiv_OUTFRY_Brand-identity_Homepage_Cover_1900px.jpg?auto=format,compress&rect=0,0,1900,1188&w=950&h=594",
+    "type": "image",
+    "status": 200
+  },
+  {
+    "url": "https://images.prismic.io/monopolondon/bQozchbmU1yjco9w_Barbour_Wallace%26Gromit_Christmas-Activation_HPcover.jpg?auto=format,compress&rect=0,0,1900,1188&w=950&h=594",
+    "type": "image",
+    "status": 200
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "threshold":0.1,
+  "maxDiffRatio":0.01,
+  "includeAA":false,
+  "regions":[{"name":"hero","x":0,"y":150,"width":1440,"height":600}]
+}

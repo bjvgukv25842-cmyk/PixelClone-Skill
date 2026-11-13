@@ -1,0 +1,79 @@
+{
+  "browser": "156.0.4314.58",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "states": [
+    {
+      "name": "initial",
+      "pointer": null,
+      "settleMs": 1500,
+      "actualElapsedMs": 1752
+    },
+    {
+      "name": "left",
+      "pointer": {
+        "x": 440,
+        "y": 400
+      },
+      "settleMs": 1500,
+      "actualElapsedMs": 1730
+    },
+    {
+      "name": "quarter",
+      "pointer": {
+        "x": 600,
+        "y": 440
+      },
+      "settleMs": 1500,
+      "actualElapsedMs": 1744
+    },
+    {
+      "name": "center",
+      "pointer": {
+        "x": 720,
+        "y": 450
+      },
+      "settleMs": 1500,
+      "actualElapsedMs": 1745
+    },
+    {
+      "name": "three-quarter",
+      "pointer": {
+        "x": 850,
+        "y": 470
+      },
+      "settleMs": 1500,
+      "actualElapsedMs": 1745
+    },
+    {
+      "name": "right",
+      "pointer": {
+        "x": 1040,
+        "y": 500
+      },
+      "settleMs": 1500,
+      "actualElapsedMs": 1745
+    },
+    {
+      "name": "reverse",
+      "pointer": {
+        "x": 720,
+        "y": 450
+      },
+      "settleMs": 1500,
+      "actualElapsedMs": 1759
+    },
+    {
+      "name": "exit",
+      "pointer": {
+        "x": 720,
+        "y": 890
+      },
+      "settleMs": 1500,
+      "actualElapsedMs": 1736
+    }
+  ],
+  "note": "Final UI correction captured against frozen reference; clocks remain live. Diagnostic state comparison."
+}

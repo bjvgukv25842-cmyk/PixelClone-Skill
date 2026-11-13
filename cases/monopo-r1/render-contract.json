@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "inputTrack": "website-resources",
+  "sourceAccess": "runtime-and-published-source",
+  "scope": "navigation, hero, pointer lens, cookies, desktop and touch viewport",
+  "reference": "https://monopo.london/",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "hasTouch": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "hasTouch": true
+    }
+  ],
+  "layers": [
+    {
+      "role": "background",
+      "renderer": "WebGL2 derivative-noise gradient copied from submitted reference shader with license comment preserved",
+      "sourceManifest": "sources.json"
+    },
+    {
+      "role": "lens",
+      "renderer": "Pixi Sprite from original lense.png"
+    },
+    {
+      "role": "English title",
+      "renderer": "Pixi Text + inverse circular mask",
+      "font": "Roobert-Regular.woff2",
+      "semanticDOM": "h1"
+    },
+    {
+      "role": "Japanese title",
+      "renderer": "Pixi Text -> displacement filter -> circular mask",
+      "font": "NotoSansCJKjp-Regular.woff2"
+    },
+    {
+      "role": "color fringe",
+      "renderer": "duplicate Japanese Text -> displacement -> RGB split -> original sprite mask"
+    }
+  ],
+  "typography": {
+    "evidence": "reference runtime.json plus original resource hashes and screenshot ROIs",
+    "rasterization": "reference padding/trim and measured font sizes, Pixi 6.2.0",
+    "DPR": "capped at 2 for local GPU; scored viewport DPR=1",
+    "touch": "real DOM at measured bounds",
+    "OpenType": "liga/kern and optimizeLegibility inspected separately from font identity"
+  },
+  "response": {
+    "coordinates": "CSS px relative to hero",
+    "forceTarget": "pointer.x / width * 5",
+    "seedTarget": "pointer.y / height * 2 - 1",
+    "smoothing": "0.1 each RAF, matching observed reference update",
+    "lensRadius": 125,
+    "displacementScale": [
+      20,
+      20
+    ],
+    "colorSplit": {
+      "red": [
+        -2,
+        2
+      ],
+      "green": [
+        1,
+        1
+      ],
+      "blue": [
+        2,
+        -2
+      ]
+    },
+    "pointerLeave": "retain last valid position",
+    "touch": "no desktop lens; fixed original mobile gradient",
+    "reducedMotion": "fixed representative scene; usable DOM controls"
+  },
+  "checks": [
+    {
+      "name": "RGB-split-affects-glyph-edges",
+      "changedPixels": 9015,
+      "pass": true
+    },
+    {
+      "name": "displacement-and-RGB-affect-glyphs",
+      "changedPixels": 10745,
+      "pass": true
+    },
+    {
+      "name": "effect-toggle-keeps-background",
+      "changedPixels": 0,
+      "pass": true
+    },
+    {
+      "name": "pointer-changes-scene-and-settled-reverse-is-deterministic",
+      "pass": true
+    },
+    {
+      "name": "real-pointer-path-affects-rendered-glyph-region",
+      "pass": true
+    },
+    {
+      "name": "cookie-menu-escape-mobile-overflow",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion-stable-across-pointer-move",
+      "pass": true
+    },
+    {
+      "name": "back-forward-cache-restores-live-renderer",
+      "pass": true
+    },
+    {
+      "name": "touch-shows-DOM-heading-without-desktop-lens",
+      "pass": true
+    }
+  ],
+  "visualEvidence": "workspace outputs/pixelclone-review/round-1/comparison-summary.json",
+  "unknown": [
+    "entry timing equivalence",
+    "all intermediate motion frame equivalence",
+    "all downstream routes"
+  ]
+}

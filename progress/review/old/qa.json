@@ -1,0 +1,59 @@
+{
+  "url": "http://127.0.0.1:8138",
+  "viewports": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "nav": 6,
+      "cookieVisible": true
+    },
+    {
+      "width": 1200,
+      "overflow": false,
+      "nav": 6,
+      "cookieVisible": true
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "nav": 6,
+      "cookieVisible": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "nav": 6,
+      "cookieVisible": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "nav": 6,
+      "cookieVisible": true
+    }
+  ],
+  "runtimeErrors": [],
+  "pointerMagnifier": {
+    "before": {
+      "display": "block",
+      "x": "275px",
+      "y": "275px",
+      "background": "-339px -206.76px"
+    },
+    "after": {
+      "x": "675px",
+      "y": "375px",
+      "background": "-803px -322.76px"
+    },
+    "moved": true,
+    "coreRefractiveLens": false
+  },
+  "cookie": {
+    "dismissed": true,
+    "persisted": true
+  },
+  "asset": {
+    "status": 200,
+    "contentType": "image/png"
+  }
+}

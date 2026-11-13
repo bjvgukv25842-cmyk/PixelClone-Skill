@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "settings": {
+    "threshold": 0.1,
+    "maxDiffRatio": 0.01,
+    "includeAA": false
+  },
+  "exact": false,
+  "withinTolerance": false,
+  "page": {
+    "count": 16340,
+    "ratio": 0.012608024691358025,
+    "rawDifferentPixels": 26762,
+    "pass": false
+  },
+  "regions": [
+    {
+      "name": "heading",
+      "count": 5943,
+      "ratio": 0.024991589571068125,
+      "rawDifferentPixels": 12046,
+      "pass": false
+    },
+    {
+      "name": "lens-center",
+      "count": 5880,
+      "ratio": 0.09408,
+      "rawDifferentPixels": 11774,
+      "pass": false
+    }
+  ],
+  "reference": "../outputs/pixelclone-review/round-1/reference/frames/reverse.png",
+  "actual": "../outputs/pixelclone-review/round-1/candidate/frames/reverse.png"
+}

@@ -1,0 +1,8 @@
+{
+  "kind": "diagnostic raw RGB comparison, not perceptual similarity",
+  "same_dimensions": true,
+  "mean_absolute_channel_difference": 41.901829218107,
+  "fraction_pixels_max_channel_delta_over_25": 0.6077114197530864,
+  "exact_rgba_match": false,
+  "reference_stability": "unknown; only one supplied still; no recapture authorized"
+}

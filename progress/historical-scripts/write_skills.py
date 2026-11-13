@@ -1,0 +1,82 @@
+from pathlib import Path
+root=Path('.')
+zh='''---
+name: pixel-perfect-reference-ui-zh
+description: 当用户需要从设计图、网页 URL、视频或本地素材复刻网页，或修复布局、字体、素材、3D 和交互动效还原偏差时使用。
+metadata:
+  short-description: 基于参考证据的网页复刻与可验证评测
+---
+
+# PixelClone：参考驱动的网页复刻
+
+目标是忠实复刻参考，而非重新设计。保留现有应用的 API、路由、状态、权限、表单校验、事件处理、键盘焦点和可访问语义。只修改展示层；真实导航、按钮、文字和表单不得截图化。
+
+## 输入与来源
+
+先确定图片、网站资源或视频模式；记录目标页面、范围、参考视口和 DPR。参考图尺寸不自动等于 CSS 尺寸。用户给出的原素材、可用且获准用于任务的参考网站原资源、参考图裁切均可使用。不同输入权限的测试不能直接比较。
+
+原字体、SVG、纹理和模型优先于重绘。禁止擅自以图库、AI 图、近似字体或猜测模型替代缺失资源。资源缺失时记录具体缺口；用户明确要求近似重建时，将结果标为近似。只有静态图时，不推断原始动画。
+
+## 执行顺序
+
+1. 核实实际运行 URL/端口和现有业务行为，限定修改范围。
+2. 读取 [证据与字体](references/evidence.md)，建立资源清单、布局区域、字体与动态证据。截图、URL、视频分别保留来源和哈希。
+3. 建立布局蓝图，先匹配页面宽度、section、列宽、gutter 和主视觉包围盒，再匹配文字、间距及细节。保留真实可交互 DOM；检查菜单不被装饰遮挡。
+4. 按原始素材比例裁切/摆放，检查透明边、分辨率、object-fit、服务路径及缓存。按钮背景与动态文字分离，不能拉伸图案来容纳文字。
+5. 涉及动效时读取 [动效与 3D](references/motion.md)，按证据选择图片、CSS/WAAPI、GSAP 或 Three.js；已有合适技术栈优先。
+6. 使用 [工具命令](references/commands.md) 采集实现，并按 [冻结评测](references/evaluation.md) 对照。先校准参考稳定性，再判定误差。
+7. 验证桌面、移动端、减少动态效果、导航、表单及项目已有检查。记录错误和未测项，不把命令成功当作网页合格。
+
+## 评测与修正
+
+每轮固定 skill、工具、输入、模型和预算；轮内不改 skill。结果包含截图/录像、差异图、资源/字体报告、需求清单和人工反馈空位。用户评价前 humanReview 为 null。
+
+逐像素一致要求原始像素完全一致；达到容差不是相似度百分比。静态截图达标不代表动态和功能通过。整体与关键区域都检查；原站本身不稳定时，只给诊断结果。
+
+按布局 → 原素材/字体 → 排版 → 间距 → 颜色阴影 → 动效修正，默认最多三轮。发现问题后先区分来源缺失、工具错误、执行偏差和 skill 缺项；仅将可迁移方法纳入下一版。独立验证案例不得用于当轮调优。
+
+## 交付
+
+报告修改范围、可运行页面、参考来源、验证结果、仍有差异和需要用户评价的项。缺素材、原始字体或运动证据时明确说明；不承诺凭单图恢复全部动画。只有一个案例成功时，不推导通用成功率。
+'''
+en='''---
+name: pixel-perfect-reference-ui
+description: Use when recreating a website from screenshots, a reference URL, video or local assets, or correcting visual mismatches in layout, typography, assets, 3D or interactive motion.
+metadata:
+  short-description: Evidence-based website reconstruction and evaluation
+---
+
+# PixelClone: evidence-based reconstruction
+
+Reproduce the reference rather than redesign it. Preserve APIs, routes, state, authentication, validation, events, keyboard focus and accessibility. Change presentation only. Keep functional navigation, controls, text and forms as real DOM.
+
+## Inputs and sources
+
+Choose screenshot-only, website-resources or video mode. Record target URL, scope, reference viewport and DPR; image pixels are not necessarily CSS pixels. User originals, reference-site resources authorized for the task, and reference crops are valid sources. Do not compare runs with different input permissions.
+
+Prefer original fonts, SVG, textures and models to redrawing. Do not silently substitute stock/generated art, approximate fonts or guessed models. Record missing evidence. If the user requests approximation, label it as such. A static image does not establish original motion.
+
+## Workflow
+
+1. Verify the actual runtime URL/port, scope and existing behavior.
+2. Read [evidence and typography](references/evidence.md). Inventory sources, hashes, resource gaps, layout boxes, fonts and motion evidence.
+3. Build a measured blueprint: page/section dimensions, columns, gutters and dominant media first; text and details second. Keep real controls and prevent decoration from occluding menus.
+4. Crop/place assets at their original aspect ratio. Inspect alpha edges, resolution, object-fit, served URLs and cache. Separate button artwork from live text; never stretch patterns to fit labels.
+5. For motion read [motion and 3D](references/motion.md). Select images, CSS/WAAPI, GSAP or Three.js from observed behavior, reusing an appropriate existing stack.
+6. Use [commands](references/commands.md) to capture and compare, following [frozen-round evaluation](references/evaluation.md). Establish reference stability before grading.
+7. Verify desktop, mobile, reduced motion, navigation/forms and existing project checks. Report errors and untested behavior explicitly.
+
+## Evaluation and repair
+
+Freeze skill, tools, inputs, model and budget per round. Do not edit the skill during a scored run. Deliver screenshots/recordings, difference images, font/resource evidence, requirement statuses and a humanReview field that stays null until user feedback.
+
+Exact pixel equality requires raw pixel equality. Tolerance is not perceptual similarity. Static success is not dynamic or functional success. Inspect both global and critical-region errors; unstable references yield diagnostics, not an exact-pass claim.
+
+Repair structure -> assets/fonts -> typography -> spacing -> color/shadows -> motion, at most three rounds by default. Classify source gaps, tool defects, execution mistakes and skill omissions before changing guidance. Only transferable findings enter the next version; keep hold-outs out of tuning.
+
+## Delivery
+
+Report scope, runnable artifact, reference provenance, evidence, remaining differences and user-review items. Missing fonts/assets/motion evidence remain explicit. One successful example does not establish a general success rate.
+'''
+(root/'skills/pixel-perfect-reference-ui-zh/SKILL.md').write_text(zh,encoding='utf-8')
+(root/'skills/pixel-perfect-reference-ui/SKILL.md').write_text(en,encoding='utf-8')

@@ -1,0 +1,52 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "435CC96716C9C633B920228B5DF8B3652728595705CBDCC7BBE56D72F3FFB322",
+    "Path": "<LOCAL_WORKSPACE>/work/candidate/frozen-skill/SKILL.md"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "DD7E30120088B82851904F0884F8CAF20A21490A473A56430A801297521E26B8",
+    "Path": "<LOCAL_WORKSPACE>/work/reference/desktop.png"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "5DD9A1EE7C19D55A6DACEAD819ED1E74AB961F357E7D3CA868B53E21F2AD6C90",
+    "Path": "<LOCAL_WORKSPACE>/work/candidate/assets/arrow_scroll.png"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "F6500F3FB46250393216659CB41DEDB04D04BEE8010AA236F047A5602E18664D",
+    "Path": "<LOCAL_WORKSPACE>/work/candidate/assets/displace.png"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "51ED18D7A5D7CD820832BD6FECCC43B9C94F00438071B96F1A634902D7199757",
+    "Path": "<LOCAL_WORKSPACE>/work/candidate/assets/footer-circles.svg"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "83B53C777F7EA9F3FD0F6D174F3D85EEA24F169C4F4AD16E8BB69EB87C5BCFF3",
+    "Path": "<LOCAL_WORKSPACE>/work/candidate/assets/lense.png"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "54DB9BDC5951E3963CED96273955962F77038F58479B1A63245E8099DAC55DA0",
+    "Path": "<LOCAL_WORKSPACE>/work/candidate/assets/mask.png"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0CC8798B086DE9A4B5FECD677FCD39D6EB3AE47347D95FF4648D2F2F6F6ECDB4",
+    "Path": "<LOCAL_WORKSPACE>/work/candidate/assets/NotoSansCJKjp-Regular.woff2"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "778709E9F6CE30C8159D616DCAF4E4A1A586BAE98323EFE7980FE08A1A8E98BB",
+    "Path": "<LOCAL_WORKSPACE>/work/candidate/assets/Roobert-Bold.woff2"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "05F8AF77724865207BEDB69D0DBC307F87289E6379F8628C341FBF87EA12C535",
+    "Path": "<LOCAL_WORKSPACE>/work/candidate/assets/Roobert-Regular.woff2"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "browser": "156.0.4314.50",
+  "errors": [],
+  "cookieDismissed": true,
+  "mobileMenuExpanded": true,
+  "escapeCloses": true,
+  "states": [
+    {
+      "index": 0,
+      "pointer": {
+        "x": 720,
+        "y": 450
+      },
+      "settleMs": 350
+    },
+    {
+      "index": 1,
+      "pointer": {
+        "x": 300,
+        "y": 300
+      },
+      "settleMs": 350
+    },
+    {
+      "index": 2,
+      "pointer": {
+        "x": 720,
+        "y": 250
+      },
+      "settleMs": 350
+    },
+    {
+      "index": 3,
+      "pointer": {
+        "x": 1100,
+        "y": 500
+      },
+      "settleMs": 350
+    },
+    {
+      "index": 4,
+      "pointer": {
+        "x": 720,
+        "y": 450
+      },
+      "settleMs": 350
+    }
+  ],
+  "scope": "mechanical behavior only; does not prove original motion similarity"
+}

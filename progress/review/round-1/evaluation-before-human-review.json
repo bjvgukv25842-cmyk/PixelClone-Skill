@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 1,
+  "caseId": "monopo-development",
+  "round": "r1",
+  "skillVersion": "0.3.0",
+  "reviewDate": "2026-11-06",
+  "runType": "maintainer source-assisted development repair; not a clean benchmark trial",
+  "inputTrack": "website-resources",
+  "sourceAccess": "runtime-and-published-source",
+  "priorFeedback": {
+    "visual": 70,
+    "completion": 60,
+    "motion": 40,
+    "accepted": false,
+    "comments": "整体来说视觉上的素材使用比较近似。但是详细查看字体还有ui动效会发现很大的问题，首先，字体原网页有一种失真感，复刻的网页每页体现出来，其次，ui动效复刻的是在鼠标摆动影响字体变形的特点，我们复刻的网页更像是一个mock，并没有完整的涉及到3d动效"
+  },
+  "humanReview": null,
+  "status": "awaiting-human-review; full fidelity acceptance not passed",
+  "completionRate": null,
+  "taskSuccessRate": null,
+  "reasonForNoAggregateRate": "This is one development repair with changed inputs, not a frozen multi-case success-rate experiment. Human completion remains a separate score.",
+  "desktopSamples": [
+    {
+      "state": "initial",
+      "page": {
+        "count": 2190,
+        "ratio": 0.0016898148148148148,
+        "rawDifferentPixels": 4767,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "navigation",
+          "count": 1144,
+          "ratio": 0.009043478260869564,
+          "rawDifferentPixels": 1956,
+          "pass": true
+        },
+        {
+          "name": "footer-copy",
+          "count": 346,
+          "ratio": 0.008141176470588235,
+          "rawDifferentPixels": 1611,
+          "pass": true
+        }
+      ],
+      "exact": false,
+      "withinTolerance": true
+    },
+    {
+      "state": "left",
+      "page": {
+        "count": 1874,
+        "ratio": 0.0014459876543209877,
+        "rawDifferentPixels": 4773,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "navigation",
+          "count": 1243,
+          "ratio": 0.00982608695652174,
+          "rawDifferentPixels": 1956,
+          "pass": true
+        },
+        {
+          "name": "footer-copy",
+          "count": 148,
+          "ratio": 0.0034823529411764707,
+          "rawDifferentPixels": 1617,
+          "pass": true
+        }
+      ],
+      "exact": false,
+      "withinTolerance": true
+    },
+    {
+      "state": "quarter",
+      "page": {
+        "count": 1950,
+        "ratio": 0.0015046296296296296,
+        "rawDifferentPixels": 5636,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 863,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 858,
+          "pass": true
+        },
+        {
+          "name": "navigation",
+          "count": 1246,
+          "ratio": 0.009849802371541502,
+          "rawDifferentPixels": 1956,
+          "pass": true
+        },
+        {
+          "name": "footer-copy",
+          "count": 209,
+          "ratio": 0.004917647058823529,
+          "rawDifferentPixels": 1617,
+          "pass": true
+        }
+      ],
+      "exact": false,
+      "withinTolerance": true
+    },
+    {
+      "state": "center",
+      "page": {
+        "count": 2108,
+        "ratio": 0.0016265432098765433,
+        "rawDifferentPixels": 4773,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "navigation",
+          "count": 1246,
+          "ratio": 0.009849802371541502,
+          "rawDifferentPixels": 1956,
+          "pass": true
+        },
+        {
+          "name": "footer-copy",
+          "count": 224,
+          "ratio": 0.005270588235294118,
+          "rawDifferentPixels": 1617,
+          "pass": true
+        }
+      ],
+      "exact": false,
+      "withinTolerance": true
+    },
+    {
+      "state": "three-quarter",
+      "page": {
+        "count": 2186,
+        "ratio": 0.0016867283950617283,
+        "rawDifferentPixels": 4772,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "navigation",
+          "count": 1240,
+          "ratio": 0.009802371541501976,
+          "rawDifferentPixels": 1955,
+          "pass": true
+        },
+        {
+          "name": "footer-copy",
+          "count": 281,
+          "ratio": 0.006611764705882353,
+          "rawDifferentPixels": 1617,
+          "pass": true
+        }
+      ],
+      "exact": false,
+      "withinTolerance": true
+    },
+    {
+      "state": "right",
+      "page": {
+        "count": 2214,
+        "ratio": 0.0017083333333333334,
+        "rawDifferentPixels": 5136,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 129,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 27,
+          "pass": true
+        },
+        {
+          "name": "navigation",
+          "count": 1218,
+          "ratio": 0.009628458498023715,
+          "rawDifferentPixels": 1981,
+          "pass": true
+        },
+        {
+          "name": "footer-copy",
+          "count": 315,
+          "ratio": 0.007411764705882353,
+          "rawDifferentPixels": 1618,
+          "pass": true
+        }
+      ],
+      "exact": false,
+      "withinTolerance": true
+    },
+    {
+      "state": "reverse",
+      "page": {
+        "count": 2108,
+        "ratio": 0.0016265432098765433,
+        "rawDifferentPixels": 6079,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 443,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 174,
+          "pass": true
+        },
+        {
+          "name": "navigation",
+          "count": 1246,
+          "ratio": 0.009849802371541502,
+          "rawDifferentPixels": 2055,
+          "pass": true
+        },
+        {
+          "name": "footer-copy",
+          "count": 224,
+          "ratio": 0.005270588235294118,
+          "rawDifferentPixels": 1642,
+          "pass": true
+        }
+      ],
+      "exact": false,
+      "withinTolerance": true
+    },
+    {
+      "state": "exit",
+      "page": {
+        "count": 2475,
+        "ratio": 0.0019097222222222222,
+        "rawDifferentPixels": 5460,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 51,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 410,
+          "ratio": 0.012148148148148148,
+          "rawDifferentPixels": 995,
+          "pass": false
+        },
+        {
+          "name": "navigation",
+          "count": 1108,
+          "ratio": 0.008758893280632412,
+          "rawDifferentPixels": 2042,
+          "pass": true
+        },
+        {
+          "name": "footer-copy",
+          "count": 741,
+          "ratio": 0.01743529411764706,
+          "rawDifferentPixels": 1649,
+          "pass": false
+        }
+      ],
+      "exact": false,
+      "withinTolerance": false
+    }
+  ],
+  "mobile": {
+    "schemaVersion": 1,
+    "dimensions": {
+      "width": 390,
+      "height": 844
+    },
+    "settings": {
+      "threshold": 0.1,
+      "maxDiffRatio": 0.01,
+      "includeAA": false
+    },
+    "exact": false,
+    "withinTolerance": false,
+    "page": {
+      "count": 1675,
+      "ratio": 0.0050887106574310365,
+      "rawDifferentPixels": 6370,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 906,
+        "ratio": 0.018377281947261664,
+        "rawDifferentPixels": 4133,
+        "pass": false
+      },
+      {
+        "name": "navigation",
+        "count": 674,
+        "ratio": 0.021602564102564104,
+        "rawDifferentPixels": 1829,
+        "pass": false
+      }
+    ],
+    "reference": "../outputs/pixelclone-review/round-1/reference/mobile/screenshot.png",
+    "actual": "../outputs/pixelclone-review/round-1/candidate/mobile/screenshot.png"
+  },
+  "reducedMotion": {
+    "schemaVersion": 1,
+    "dimensions": {
+      "width": 1440,
+      "height": 900
+    },
+    "settings": {
+      "threshold": 0.1,
+      "maxDiffRatio": 0.01,
+      "includeAA": false
+    },
+    "exact": false,
+    "withinTolerance": true,
+    "page": {
+      "count": 2177,
+      "ratio": 0.001679783950617284,
+      "rawDifferentPixels": 4746,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      }
+    ],
+    "reference": "../outputs/pixelclone-review/round-1/reference/reduced/screenshot.png",
+    "actual": "../outputs/pixelclone-review/round-1/candidate/reduced/screenshot.png"
+  },
+  "referenceStability": {
+    "scope": "Stationary desktop only; not a motion-clock synchronization claim",
+    "comparisons": [
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "page": {
+          "count": 631,
+          "ratio": 0.0004868827160493827,
+          "rawDifferentPixels": 809,
+          "pass": true
+        },
+        "regions": [
+          {
+            "name": "heading",
+            "count": 0,
+            "ratio": 0,
+            "rawDifferentPixels": 0,
+            "pass": true
+          },
+          {
+            "name": "lens",
+            "count": 0,
+            "ratio": 0,
+            "rawDifferentPixels": 0,
+            "pass": true
+          }
+        ],
+        "withinTolerance": true
+      },
+      {
+        "pair": [
+          1,
+          3
+        ],
+        "page": {
+          "count": 631,
+          "ratio": 0.0004868827160493827,
+          "rawDifferentPixels": 809,
+          "pass": true
+        },
+        "regions": [
+          {
+            "name": "heading",
+            "count": 0,
+            "ratio": 0,
+            "rawDifferentPixels": 0,
+            "pass": true
+          },
+          {
+            "name": "lens",
+            "count": 0,
+            "ratio": 0,
+            "rawDifferentPixels": 0,
+            "pass": true
+          }
+        ],
+        "withinTolerance": true
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "page": {
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        "regions": [
+          {
+            "name": "heading",
+            "count": 0,
+            "ratio": 0,
+            "rawDifferentPixels": 0,
+            "pass": true
+          },
+          {
+            "name": "lens",
+            "count": 0,
+            "ratio": 0,
+            "rawDifferentPixels": 0,
+            "pass": true
+          }
+        ],
+        "withinTolerance": true
+      }
+    ]
+  },
+  "mechanicalChecks": {
+    "checks": [
+      {
+        "name": "RGB-split-affects-glyph-edges",
+        "changedPixels": 9015,
+        "pass": true
+      },
+      {
+        "name": "displacement-and-RGB-affect-glyphs",
+        "changedPixels": 10745,
+        "pass": true
+      },
+      {
+        "name": "effect-toggle-keeps-background",
+        "changedPixels": 0,
+        "pass": true
+      },
+      {
+        "name": "pointer-changes-scene-and-settled-reverse-is-deterministic",
+        "pass": true
+      },
+      {
+        "name": "real-pointer-path-affects-rendered-glyph-region",
+        "pass": true
+      },
+      {
+        "name": "cookie-menu-escape-mobile-overflow",
+        "pass": true
+      },
+      {
+        "name": "reduced-motion-stable-across-pointer-move",
+        "pass": true
+      },
+      {
+        "name": "back-forward-cache-restores-live-renderer",
+        "pass": true
+      },
+      {
+        "name": "touch-shows-DOM-heading-without-desktop-lens",
+        "pass": true
+      }
+    ],
+    "humanReview": null,
+    "errors": [],
+    "status": "mechanical checks passed; visual fidelity needs reference and human review"
+  },
+  "motion": {
+    "status": "human-review-pending",
+    "capture": "CDP screencast + source browser timestamps, VFR MP4",
+    "timeSynchronized": false
+  },
+  "limitations": [
+    "Published rendering source/runtime evidence was added; no causal comparison with r0 is claimed.",
+    "Entry easing is not frame-calibrated.",
+    "Lens overlaps bottom content in the boundary sample; failed ROI is retained.",
+    "Touch menu differs from the reference initial viewport.",
+    "Downstream destination sections remain scoped placeholders.",
+    "Continuous motion and overall acceptance require human review.",
+    "12 holdout cases remain unrun and uninspected for tuning."
+  ],
+  "validation": {
+    "nodeTests": 19,
+    "pythonTests": 6,
+    "caseChecks": 9,
+    "skillForwardTest": "independent evidence-contract application, not a full reconstruction trial",
+    "remoteCI": "not run"
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "path": "assets\\arrow_scroll.png",
+    "source_url": "https://monopo.london/arrow_scroll.png",
+    "role": "authorized original reference resource",
+    "sha256": "5dd9a1ee7c19d55a6dacead819ed1e74ab961f357e7d3ca868b53e21f2ad6c90"
+  },
+  {
+    "path": "assets\\displace.png",
+    "source_url": "https://monopo.london/displace.png",
+    "role": "authorized original reference resource",
+    "sha256": "f6500f3fb46250393216659cb41dedb04d04bee8010aa236f047a5602e18664d"
+  },
+  {
+    "path": "assets\\footer-circles.svg",
+    "source_url": "https://monopo.london/footer-circles.svg",
+    "role": "authorized original reference resource",
+    "sha256": "51ed18d7a5d7cd820832bd6feccc43b9c94f00438071b96f1a634902d7199757"
+  },
+  {
+    "path": "assets\\lense.png",
+    "source_url": "https://monopo.london/lense.png",
+    "role": "authorized original reference resource",
+    "sha256": "83b53c777f7ea9f3fd0f6d174f3d85eea24f169c4f4ad16e8bb69eb87c5bcff3"
+  },
+  {
+    "path": "assets\\mask.png",
+    "source_url": "https://monopo.london/mask.png",
+    "role": "authorized original reference resource",
+    "sha256": "54db9bdc5951e3963ced96273955962f77038f58479b1a63245e8099dac55da0"
+  },
+  {
+    "path": "assets\\noise.png",
+    "source_url": null,
+    "role": "procedural grain visual inference",
+    "sha256": "2c3930a1350df440a80438d5b14a2c9033626e67823c863fe25a70e0fc7edbcc"
+  },
+  {
+    "path": "assets\\NotoSansCJKjp-Regular.woff2",
+    "source_url": "https://monopo.london/fonts/NotoSansCJKjp-Regular.woff2",
+    "role": "authorized original reference resource",
+    "sha256": "0cc8798b086de9a4b5fecd677fcd39d6eb3ae47347d95ff4648d2f2f6f6ecdb4"
+  },
+  {
+    "path": "assets\\Roobert-Bold.woff2",
+    "source_url": "https://monopo.london/fonts/Roobert-Bold.woff2",
+    "role": "authorized original reference resource",
+    "sha256": "778709e9f6ce30c8159d616dcaf4e4a1a586bae98323efe7980fe08a1a8e98bb"
+  },
+  {
+    "path": "assets\\Roobert-Regular.woff2",
+    "source_url": "https://monopo.london/fonts/Roobert-Regular.woff2",
+    "role": "authorized original reference resource",
+    "sha256": "05f8af77724865207bedb69d0dbc307f87289e6379f8628c341fbf87ea12c535"
+  }
+]

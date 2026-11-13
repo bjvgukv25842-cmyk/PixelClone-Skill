@@ -16,6 +16,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import hashlib
+import math
 from collections import deque
 from pathlib import Path
 
@@ -130,13 +132,25 @@ def main() -> None:
     parser.add_argument("--brightness", type=float, default=1.0)
     parser.add_argument("--saturation", type=float, default=1.0)
     parser.add_argument("--report", help="Optional JSON report path")
+    parser.add_argument("--lossless", action="store_true", help="Lossless WebP output")
     args = parser.parse_args()
 
     src = Path(args.src)
     out = Path(args.out)
     img = Image.open(src).convert("RGBA")
     source_size = img.size
+    if src.resolve() == out.resolve():
+        parser.error("Output must not overwrite the source")
+    if out.suffix.lower() not in (".png", ".webp"):
+        parser.error("Output must be PNG or WebP")
+    for name in ("threshold", "feather", "brightness", "saturation"):
+        value = getattr(args, name)
+        if not math.isfinite(value) or value < 0:
+            parser.error(f"{name} must be finite and non-negative")
     if args.box:
+        x1, y1, x2, y2 = args.box
+        if x1 < 0 or y1 < 0 or x2 > img.width or y2 > img.height:
+            parser.error("Crop box is outside source image")
         img = img.crop(args.box)
 
     if args.transparent_edge:
@@ -151,9 +165,10 @@ def main() -> None:
         img = matte(img, args.matte)
 
     out.parent.mkdir(parents=True, exist_ok=True)
-    img.save(out)
+    img.save(out, **({"lossless": args.lossless} if out.suffix.lower() == ".webp" else {}))
 
     report = {
+        "source": {"sha256": hashlib.sha256(src.read_bytes()).hexdigest()},
         "src": str(src),
         "out": str(out),
         "source_size": list(source_size),
@@ -167,6 +182,9 @@ def main() -> None:
         "output": alpha_edge_report(img),
     }
     report_path = Path(args.report) if args.report else out.with_suffix(out.suffix + ".json")
+    if report_path.resolve() in (src.resolve(), out.resolve()):
+        parser.error("Report path must differ from source and output")
+    report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
 

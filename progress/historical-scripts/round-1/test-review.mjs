@@ -1,0 +1,13 @@
+import {chromium} from 'playwright';import fs from 'node:fs/promises';import assert from 'node:assert/strict';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+try{const page=await browser.newPage({viewport:{width:1440,height:1100},acceptDownloads:true});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('http://127.0.0.1:8765/index.html');await page.waitForURL('**/round-1/index.html');
+const states=await page.locator('#state option').evaluateAll(items=>items.map(e=>e.value));assert.equal(states.length,8);
+for(const state of states){await page.selectOption('#state',state);await page.waitForFunction(()=>[...document.querySelectorAll('img')].every(i=>i.complete&&i.naturalWidth>0));assert.ok((await page.locator('#metric').textContent()).includes('全页差异'));}
+await page.selectOption('#state','initial');await page.waitForFunction(()=>[...document.querySelectorAll('video')].every(v=>v.videoWidth>0));
+const links=await page.locator('a').evaluateAll(a=>a.map(e=>e.href).filter(h=>h.startsWith(location.origin)));for(const url of links){const response=await page.request.get(url);assert.equal(response.status(),200,url);}
+await page.locator('[name=visual]').fill('81');await page.locator('[name=completion]').fill('72');await page.locator('[name=motion]').fill('65');await page.locator('[name=comments]').fill('Automated export test only; not human feedback.');await page.reload();assert.equal(await page.locator('[name=visual]').inputValue(),'81');
+const downloaded=page.waitForEvent('download');await page.locator('#feedback button').click();const download=await downloaded;const feedback=JSON.parse(await fs.readFile(await download.path(),'utf8'));assert.equal(feedback.round,'r1');assert.equal(feedback.humanReview.visual,81);
+await page.evaluate(()=>localStorage.removeItem('pixelclone-feedback-r1-v0.3'));await page.reload();assert.equal(await page.locator('[name=visual]').inputValue(),'');
+await page.waitForFunction(()=>[...document.querySelectorAll('img')].every(i=>i.complete&&i.naturalWidth>0));await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:'../outputs/pixelclone-review/round-1/review-preview.png'});assert.deepEqual(errors,[]);assert.equal(JSON.parse(await fs.readFile('../outputs/pixelclone-review/round-1/evaluation.json','utf8')).humanReview,null);
+const result={statesChecked:states.length,linksChecked:links.length,imagesLoaded:true,videosMetadataLoaded:true,feedbackPersistenceAndExport:true,humanReviewStillNull:true,errors};await fs.writeFile('../outputs/pixelclone-review/round-1/viewer-checks.json',JSON.stringify(result,null,2));console.log(result);
+}finally{await browser.close();}

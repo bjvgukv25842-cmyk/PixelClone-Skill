@@ -1,0 +1,44 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>PixelClone 评审</title><style>body{font:16px/1.65 system-ui;max-width:1300px;margin:40px auto;padding:0 24px;background:#f4f5f7;color:#18212b}h1{font-size:28px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}img{width:100%;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:20px;border-radius:12px}small{color:#465367}</style><h1>截图未达到配置容差</h1><p>图像容差、需求完成率、人工评分分别报告。截图结果不代表功能或动态已通过。</p><div class="grid"><figure><figcaption>reference</figcaption><img src="reference.png"></figure><figure><figcaption>actual</figcaption><img src="actual.png"></figure><figure><figcaption>overlay</figcaption><img src="overlay.png"></figure><figure><figcaption>diff</figcaption><img src="diff.png"></figure></div><h2>结果与证据</h2><pre>{
+  &quot;completion&quot;: null,
+  &quot;summary&quot;: null,
+  &quot;comparison&quot;: {
+    &quot;schemaVersion&quot;: 1,
+    &quot;dimensions&quot;: {
+      &quot;width&quot;: 1440,
+      &quot;height&quot;: 900
+    },
+    &quot;settings&quot;: {
+      &quot;threshold&quot;: 0.1,
+      &quot;maxDiffRatio&quot;: 0.01,
+      &quot;includeAA&quot;: false
+    },
+    &quot;exact&quot;: false,
+    &quot;withinTolerance&quot;: false,
+    &quot;page&quot;: {
+      &quot;count&quot;: 16340,
+      &quot;ratio&quot;: 0.012608024691358025,
+      &quot;rawDifferentPixels&quot;: 26762,
+      &quot;pass&quot;: false
+    },
+    &quot;regions&quot;: [
+      {
+        &quot;name&quot;: &quot;heading&quot;,
+        &quot;count&quot;: 5943,
+        &quot;ratio&quot;: 0.024991589571068125,
+        &quot;rawDifferentPixels&quot;: 12046,
+        &quot;pass&quot;: false
+      },
+      {
+        &quot;name&quot;: &quot;lens-center&quot;,
+        &quot;count&quot;: 5880,
+        &quot;ratio&quot;: 0.09408,
+        &quot;rawDifferentPixels&quot;: 11774,
+        &quot;pass&quot;: false
+      }
+    ],
+    &quot;reference&quot;: &quot;../outputs/pixelclone-review/round-1/reference/frames/reverse.png&quot;,
+    &quot;actual&quot;: &quot;../outputs/pixelclone-review/round-1/candidate/frames/reverse.png&quot;
+  },
+  &quot;capture&quot;: null,
+  &quot;evaluation&quot;: null
+}</pre><p>人工反馈保存在 evaluation.json 的 humanReview 字段；未收到评价时保持 null。</p></html>

@@ -1,0 +1,21 @@
+{
+  "evaluation": "real no-skill control",
+  "entry": "index.html",
+  "implementation": "Standalone HTML/CSS/JavaScript with local font and lens-texture assets; opens directly as a local file or through any static server.",
+  "inputs_read": ["work/reference/desktop.png", "work/reference/dom.json", "work/reference/resources.json"],
+  "resource_urls_used": ["https://monopo.london/fonts/Roobert-Regular.woff2", "https://monopo.london/fonts/Roobert-Bold.woff2", "https://monopo.london/lense.png"],
+  "source_constraints": {"pixelclone_skill_read": false, "toolkit_source_read": false, "external_site_source_code_read": false, "reference_screenshot_embedded_as_page": false},
+  "actual_work_limits": {"initial_build_attempts": 1, "correction_attempts": 2, "top_level_execution_tool_calls_including_notes": 8, "approximate_nested_tool_calls": 14, "token_metrics": "Unavailable; not estimated", "scope": "navigation, hero, pointer lens approximation, cookie dismissal, desktop and mobile"},
+  "verified": {"browser": "Headless Microsoft Edge via Playwright", "desktop_viewport": "1440x900", "mobile_viewport": "390x844", "page_errors": [], "cookie_dismissal": true, "cookie_persistence_after_reload": true, "mobile_menu_opens": true, "mobile_menu_closes": true, "pointer_lens_moves": true, "pointer_check": "After moving pointer to 300,250 and waiting 350ms, the 250px lens bounding box was approximately x=179.36 y=127.08; center approximately 304.36,252.08.", "screenshots": ["desktop.png", "mobile.png"], "automated_check": "check.cjs"},
+  "missing_features_and_limitations": [
+    "The pointer lens follows pointer/touch input with easing and shows chromatically offset Japanese text, but does not reproduce the original shader refraction, displacement, or spatially accurate translation reveal.",
+    "Background is a hand-authored canvas approximation with noise. It is static; original animated fluid behavior was not available in the supplied still reference and is not implemented.",
+    "Only a desktop reference was supplied. Mobile layout is inferred and tested for rendering/menu/cookie behavior, not matched against an original mobile reference.",
+    "The hero sentence was inferred from partially obscured screenshot text; the DOM manifest did not include its canvas-rendered copy.",
+    "Navigation destinations are conventional external monopo URLs inferred from labels. Their destination correctness was not verified; no local secondary routes were built.",
+    "Clock labels reproduce the reference snapshot and do not update.",
+    "Recent work and lower-page content are outside this control's requested hero/navigation scope and are not reconstructed.",
+    "Cookie persistence initially failed because author display:flex overrode hidden; corrected and rechecked successfully.",
+    "Visual differences remain in background contours, lens typography/refraction, wordmark, and responsive composition. No pixel-perfect or original-dynamic-equivalence claim is made."
+  ]
+}

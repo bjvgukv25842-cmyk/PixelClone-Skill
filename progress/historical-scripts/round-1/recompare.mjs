@@ -1,0 +1,6 @@
+import fs from 'node:fs/promises';import {compareFiles} from '../../toolkit/compare.mjs';import {writeReport} from '../../toolkit/report.mjs';
+const root='../outputs/pixelclone-review/round-1';const points=JSON.parse(await fs.readFile(root+'/candidate/timeline.json')).states;const summary=[];
+for(const {name,pointer} of points){const p=pointer??{x:720,y:450},x=Math.max(0,Math.round(p.x-125)),y=Math.max(0,Math.round(p.y-125));
+ const regions=[{name:'heading',x:300,y:300,width:820,height:290},{name:'lens',x,y,width:Math.min(250,1440-x),height:Math.min(250,900-y)},{name:'navigation',x:40,y:20,width:1150,height:110},{name:'footer-copy',x:350,y:800,width:500,height:85}];
+ const r=await compareFiles(root+'/reference/frames/'+name+'.png',root+'/candidate/frames/'+name+'.png',root+'/comparisons/'+name,{regions});await writeReport(root+'/comparisons/'+name);summary.push({state:name,page:r.page,regions:r.regions,exact:r.exact,withinTolerance:r.withinTolerance});
+}await fs.writeFile(root+'/comparison-summary.json',JSON.stringify(summary,null,2));console.log(summary.map(s=>({state:s.state,page:s.page.ratio,heading:s.regions[0].ratio,lens:s.regions[1].ratio,navigation:s.regions[2].ratio,pass:s.withinTolerance})));

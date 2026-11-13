@@ -1,0 +1,92 @@
+{
+  "scope": "Stationary desktop only; not a motion-clock synchronization claim",
+  "comparisons": [
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "page": {
+        "count": 631,
+        "ratio": 0.0004868827160493827,
+        "rawDifferentPixels": 809,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        }
+      ],
+      "withinTolerance": true
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "page": {
+        "count": 631,
+        "ratio": 0.0004868827160493827,
+        "rawDifferentPixels": 809,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        }
+      ],
+      "withinTolerance": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "page": {
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      },
+      "regions": [
+        {
+          "name": "heading",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        },
+        {
+          "name": "lens",
+          "count": 0,
+          "ratio": 0,
+          "rawDifferentPixels": 0,
+          "pass": true
+        }
+      ],
+      "withinTolerance": true
+    }
+  ]
+}

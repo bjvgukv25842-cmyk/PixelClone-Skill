@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "settings": {
+    "threshold": 0.1,
+    "maxDiffRatio": 0.01,
+    "includeAA": false
+  },
+  "exact": false,
+  "withinTolerance": false,
+  "page": {
+    "count": 15977,
+    "ratio": 0.012327932098765431,
+    "rawDifferentPixels": 26054,
+    "pass": false
+  },
+  "regions": [
+    {
+      "name": "heading",
+      "count": 6076,
+      "ratio": 0.025550883095037846,
+      "rawDifferentPixels": 11808,
+      "pass": false
+    },
+    {
+      "name": "lens-center",
+      "count": 6015,
+      "ratio": 0.09624,
+      "rawDifferentPixels": 11672,
+      "pass": false
+    }
+  ],
+  "reference": "../outputs/pixelclone-review/round-1/reference/frames/initial.png",
+  "actual": "../outputs/pixelclone-review/round-1/candidate/frames/initial.png"
+}

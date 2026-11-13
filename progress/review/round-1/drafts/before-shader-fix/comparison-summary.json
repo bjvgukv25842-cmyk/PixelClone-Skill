@@ -1,0 +1,210 @@
+[
+  {
+    "state": "initial",
+    "page": {
+      "count": 15977,
+      "ratio": 0.012327932098765431,
+      "rawDifferentPixels": 26054,
+      "pass": false
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 6076,
+        "ratio": 0.025550883095037846,
+        "rawDifferentPixels": 11808,
+        "pass": false
+      },
+      {
+        "name": "lens-center",
+        "count": 6015,
+        "ratio": 0.09624,
+        "rawDifferentPixels": 11672,
+        "pass": false
+      }
+    ],
+    "withinTolerance": false
+  },
+  {
+    "state": "left",
+    "page": {
+      "count": 13716,
+      "ratio": 0.010583333333333333,
+      "rawDifferentPixels": 21836,
+      "pass": false
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 3322,
+        "ratio": 0.013969722455845247,
+        "rawDifferentPixels": 7582,
+        "pass": false
+      },
+      {
+        "name": "lens-center",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      }
+    ],
+    "withinTolerance": false
+  },
+  {
+    "state": "quarter",
+    "page": {
+      "count": 16609,
+      "ratio": 0.012815586419753087,
+      "rawDifferentPixels": 27682,
+      "pass": false
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 6279,
+        "ratio": 0.026404541631623212,
+        "rawDifferentPixels": 13035,
+        "pass": false
+      },
+      {
+        "name": "lens-center",
+        "count": 3257,
+        "ratio": 0.052112,
+        "rawDifferentPixels": 6897,
+        "pass": false
+      }
+    ],
+    "withinTolerance": false
+  },
+  {
+    "state": "center",
+    "page": {
+      "count": 16333,
+      "ratio": 0.012602623456790123,
+      "rawDifferentPixels": 26077,
+      "pass": false
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 5936,
+        "ratio": 0.02496215306980656,
+        "rawDifferentPixels": 11822,
+        "pass": false
+      },
+      {
+        "name": "lens-center",
+        "count": 5873,
+        "ratio": 0.093968,
+        "rawDifferentPixels": 11686,
+        "pass": false
+      }
+    ],
+    "withinTolerance": false
+  },
+  {
+    "state": "three-quarter",
+    "page": {
+      "count": 14859,
+      "ratio": 0.011465277777777777,
+      "rawDifferentPixels": 24167,
+      "pass": false
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 4457,
+        "ratio": 0.018742640874684607,
+        "rawDifferentPixels": 9774,
+        "pass": false
+      },
+      {
+        "name": "lens-center",
+        "count": 1830,
+        "ratio": 0.02928,
+        "rawDifferentPixels": 4198,
+        "pass": false
+      }
+    ],
+    "withinTolerance": false
+  },
+  {
+    "state": "right",
+    "page": {
+      "count": 13804,
+      "ratio": 0.010651234567901234,
+      "rawDifferentPixels": 20238,
+      "pass": false
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 3358,
+        "ratio": 0.014121110176619007,
+        "rawDifferentPixels": 5746,
+        "pass": false
+      },
+      {
+        "name": "lens-center",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 0,
+        "pass": true
+      }
+    ],
+    "withinTolerance": false
+  },
+  {
+    "state": "reverse",
+    "page": {
+      "count": 16340,
+      "ratio": 0.012608024691358025,
+      "rawDifferentPixels": 26762,
+      "pass": false
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 5943,
+        "ratio": 0.024991589571068125,
+        "rawDifferentPixels": 12046,
+        "pass": false
+      },
+      {
+        "name": "lens-center",
+        "count": 5880,
+        "ratio": 0.09408,
+        "rawDifferentPixels": 11774,
+        "pass": false
+      }
+    ],
+    "withinTolerance": false
+  },
+  {
+    "state": "exit",
+    "page": {
+      "count": 9877,
+      "ratio": 0.007621141975308642,
+      "rawDifferentPixels": 15693,
+      "pass": true
+    },
+    "regions": [
+      {
+        "name": "heading",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 107,
+        "pass": true
+      },
+      {
+        "name": "lens-center",
+        "count": 0,
+        "ratio": 0,
+        "rawDifferentPixels": 6,
+        "pass": true
+      }
+    ],
+    "withinTolerance": true
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "file": "assets/Roobert-Regular.woff2",
+    "url": "https://monopo.london/fonts/Roobert-Regular.woff2",
+    "sha256": "05f8af77724865207bedb69d0dbc307f87289e6379f8628c341fbf87ea12c535",
+    "scope": "local development evaluation; not bundled in the reusable skill"
+  },
+  {
+    "file": "assets/Roobert-Bold.woff2",
+    "url": "https://monopo.london/fonts/Roobert-Bold.woff2",
+    "sha256": "778709e9f6ce30c8159d616dcaf4e4a1a586bae98323efe7980fe08a1a8e98bb",
+    "scope": "local development evaluation; not bundled in the reusable skill"
+  },
+  {
+    "file": "assets/NotoSansCJKjp-Regular.woff2",
+    "url": "https://monopo.london/fonts/NotoSansCJKjp-Regular.woff2",
+    "sha256": "0cc8798b086de9a4b5fecd677fcd39d6eb3ae47347d95ff4648d2f2f6f6ecdb4",
+    "scope": "local development evaluation; not bundled in the reusable skill"
+  },
+  {
+    "file": "assets/lense.png",
+    "url": "https://monopo.london/lense.png",
+    "sha256": "83b53c777f7ea9f3fd0f6d174f3d85eea24f169c4f4ad16e8bb69eb87c5bcff3",
+    "scope": "local development evaluation; not bundled in the reusable skill"
+  },
+  {
+    "file": "assets/displace.png",
+    "url": "https://monopo.london/displace.png",
+    "sha256": "f6500f3fb46250393216659cb41dedb04d04bee8010aa236f047a5602e18664d",
+    "scope": "local development evaluation; not bundled in the reusable skill"
+  },
+  {
+    "file": "assets/mask.png",
+    "url": "https://monopo.london/mask.png",
+    "sha256": "54db9bdc5951e3963ced96273955962f77038f58479b1a63245e8099dac55da0",
+    "scope": "local development evaluation; not bundled in the reusable skill"
+  },
+  {
+    "file": "assets/footer-circles.svg",
+    "url": "https://monopo.london/footer-circles.svg",
+    "sha256": "51ed18d7a5d7cd820832bd6feccc43b9c94f00438071b96f1a634902d7199757",
+    "scope": "local development evaluation; not bundled in the reusable skill"
+  },
+  {
+    "file": "assets/arrow_scroll.png",
+    "url": "https://monopo.london/arrow_scroll.png",
+    "sha256": "5dd9a1ee7c19d55a6dacead819ed1e74ab961f357e7d3ca868b53e21f2ad6c90",
+    "scope": "local development evaluation; not bundled in the reusable skill"
+  },
+  {
+    "file": "vendor/pixi.min.js",
+    "url": "https://pixijs.download/v6.2.0/pixi.min.js",
+    "sha256": "d4682b165f688a22f5afb9a9a04a631799fd83e0ef7453c35b9ac4d92fa884cf",
+    "scope": "local development evaluation; not bundled in the reusable skill"
+  },
+  {
+    "file": "assets/gradient.vert",
+    "url": "https://monopo.london/",
+    "evidence": "submitted WebGL shader, captured 2026-11-05",
+    "sha256": "c3e40197dfee0f184e18e0696c2173a96c6b2baf421707ef8a33cf6555d6aeec",
+    "scope": "source-assisted local diagnostic; excluded from skill/source ZIP"
+  },
+  {
+    "file": "assets/gradient.frag",
+    "url": "https://monopo.london/",
+    "evidence": "submitted WebGL shader, captured 2026-11-05",
+    "sha256": "1fca905d8d787f00257c875a4b92605fb3eaab6918480579669005b5a77235ee",
+    "scope": "source-assisted local diagnostic; excluded from skill/source ZIP"
+  },
+  {
+    "file": "assets/rgb.vert",
+    "url": "https://monopo.london/",
+    "evidence": "submitted WebGL shader, captured 2026-11-05",
+    "sha256": "f01117524e71203da0978cb272c6e61b70c00b64f1982df7648aa2bf72b5319b",
+    "scope": "source-assisted local diagnostic; excluded from skill/source ZIP"
+  },
+  {
+    "file": "assets/rgb.frag",
+    "url": "https://monopo.london/",
+    "evidence": "submitted WebGL shader, captured 2026-11-05",
+    "sha256": "1a0d1f9fc2e817af54557c6fcc24494297b05cf277a592a3355f8b9fd9995352",
+    "scope": "source-assisted local diagnostic; excluded from skill/source ZIP"
+  },
+  {
+    "file": "assets/logo.svg",
+    "url": "https://monopo.london/",
+    "evidence": "inline SVG from .c-Header-logo",
+    "sha256": "3f125a17e4109a4abbd62b9f8346fe2539916be27e7b9c2c93cd13e20d1d8a68",
+    "scope": "local evaluation only"
+  }
+]

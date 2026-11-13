@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "name": "RGB-split-affects-glyph-edges",
+      "changedPixels": 9015,
+      "pass": true
+    },
+    {
+      "name": "displacement-and-RGB-affect-glyphs",
+      "changedPixels": 10745,
+      "pass": true
+    },
+    {
+      "name": "effect-toggle-keeps-background",
+      "changedPixels": 0,
+      "pass": true
+    },
+    {
+      "name": "pointer-changes-scene-and-settled-reverse-is-deterministic",
+      "pass": true
+    },
+    {
+      "name": "real-pointer-path-affects-rendered-glyph-region",
+      "pass": true
+    },
+    {
+      "name": "cookie-menu-escape-mobile-overflow",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion-stable-across-pointer-move",
+      "pass": true
+    },
+    {
+      "name": "back-forward-cache-restores-live-renderer",
+      "pass": true
+    },
+    {
+      "name": "touch-shows-DOM-heading-without-desktop-lens",
+      "pass": true
+    }
+  ],
+  "humanReview": null,
+  "errors": [],
+  "status": "mechanical checks passed; visual fidelity needs reference and human review"
+}

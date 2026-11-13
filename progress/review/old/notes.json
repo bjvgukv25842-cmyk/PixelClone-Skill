@@ -1,0 +1,111 @@
+{
+  "evaluation": "frozen old skill, single build attempt",
+  "reference": {
+    "file": "work/reference/desktop.png",
+    "size": [
+      1440,
+      900
+    ],
+    "desktopTarget": [
+      1440,
+      900
+    ],
+    "mobileTarget": [
+      390,
+      844
+    ]
+  },
+  "sourcesUsed": [
+    "desktop.png",
+    "dom.json",
+    "resources.json (inventory only; no resources downloaded)",
+    "skills/pixel-perfect-reference-ui-zh/SKILL.md frozen copy",
+    "old skill scripts inspected and attempted"
+  ],
+  "assets": [
+    {
+      "file": "hero.png",
+      "sourceBox": [
+        0,
+        114,
+        1440,
+        690
+      ]
+    },
+    {
+      "file": "lower.png",
+      "sourceBox": [
+        0,
+        690,
+        952,
+        818
+      ]
+    },
+    {
+      "file": "logo.png",
+      "sourceBox": [
+        54,
+        28,
+        216,
+        57
+      ]
+    },
+    {
+      "file": "mark.png",
+      "sourceBox": [
+        55,
+        842,
+        94,
+        862
+      ]
+    }
+  ],
+  "missingFeatures": [
+    "Core Monopo lens is NOT reconstructed: implemented pointer-following pixel magnifier only. Captured central lens remains baked into hero crop. No bilingual reveal, displacement/refraction, true shader animation, or background motion.",
+    "Background is incomplete above/below allowed clean crops; background cannot be recovered faithfully without redrawing or external assets prohibited by frozen old skill.",
+    "Hero headline is static raster with accessible DOM heading, not full live multilingual typesetting.",
+    "Mobile reference was unavailable: layout adapted from desktop. Cropped raster has unavoidable scale and framing mismatch.",
+    "Roobert fonts were not downloaded due to old skill external-asset prohibition; uses Arial.",
+    "Navigation destinations inferred from labels; only homepage and email have direct supplied evidence; external routes are not verified.",
+    "Clock labels reproduce captured time and are not live clocks.",
+    "Visual QA confirmed hard horizontal seams where crop regions meet the black fallback, visible background retained around logo/mark crops, and clipped headline on mobile. These are unresolved material/layout failures, not a pixel-perfect result."
+  ],
+  "actualWorkLimits": {
+    "maxToolCalls": 20,
+    "buildAttempts": 1,
+    "correctionAttempts": 0,
+    "tokenMetrics": "not measured",
+    "libraryFailure": "Default Python lacks Pillow, so old asset/blueprint scripts failed before output. Used System.Drawing exact crop fallback.",
+    "verification": "Edge headless browser: desktop and mobile screenshots, 5 viewport widths, 6 navigation links retained, no horizontal overflow, pointer magnifier movement, cookie dismissal/persistence, served PNG content-type, no runtime errors. True core lens explicitly fails.",
+    "approximateToolCalls": 13,
+    "screenshotReview": "Viewed desktop-1440.png and desktop-390.png. Measured browser checks are in qa.json; screenshots are actual Edge renders.",
+    "finalStatus": "Partial runnable reconstruction; FAIL for faithful dynamic core and mobile headline completeness. One build attempt, zero corrections."
+  },
+  "layoutBlueprint": {
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 114
+    },
+    "hero": {
+      "x": 0,
+      "y": 114,
+      "width": 1440,
+      "height": 786
+    },
+    "title": {
+      "x": 367,
+      "y": 320,
+      "width": 711,
+      "height": 255
+    },
+    "cookie": {
+      "x": 952,
+      "y": 691,
+      "width": 432,
+      "height": 165
+    },
+    "gutter": 55
+  }
+}

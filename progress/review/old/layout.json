@@ -1,0 +1,83 @@
+{
+  "sourceReference": "work\\reference\\desktop.png",
+  "referenceCanvas": {
+    "width": 1440,
+    "height": 900
+  },
+  "targetViewport": {
+    "width": 1440.0
+  },
+  "scale": 1.0,
+  "sections": [
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "w": 1440.0,
+      "h": 114.0,
+      "xPct": 0.0,
+      "yPct": 0.0,
+      "wPct": 1.0,
+      "hPct": 0.126667,
+      "aspect": 12.631579,
+      "name": "header"
+    },
+    {
+      "x": 0.0,
+      "y": 114.0,
+      "w": 1440.0,
+      "h": 786.0,
+      "xPct": 0.0,
+      "yPct": 0.126667,
+      "wPct": 1.0,
+      "hPct": 0.873333,
+      "aspect": 1.832061,
+      "name": "hero"
+    }
+  ],
+  "regions": {
+    "title": {
+      "x": 367.0,
+      "y": 320.0,
+      "w": 711.0,
+      "h": 255.0,
+      "xPct": 0.254861,
+      "yPct": 0.355556,
+      "wPct": 0.49375,
+      "hPct": 0.283333,
+      "aspect": 2.788235
+    },
+    "cookie": {
+      "x": 952.0,
+      "y": 691.0,
+      "w": 432.0,
+      "h": 165.0,
+      "xPct": 0.661111,
+      "yPct": 0.767778,
+      "wPct": 0.3,
+      "hPct": 0.183333,
+      "aspect": 2.618182
+    },
+    "logo": {
+      "x": 54.0,
+      "y": 28.0,
+      "w": 162.0,
+      "h": 29.0,
+      "xPct": 0.0375,
+      "yPct": 0.031111,
+      "wPct": 0.1125,
+      "hPct": 0.032222,
+      "aspect": 5.586207
+    }
+  },
+  "grid": {
+    "containerX": 55.0,
+    "containerW": 1329.0,
+    "columns": 4,
+    "gutter": 24.0
+  },
+  "notes": [
+    "Use section heights and region boxes as the desktop composition baseline.",
+    "Prefer percentages for responsive scaling, but preserve these proportions at the reference viewport.",
+    "Manually verify fold position and dominant asset bounding boxes with browser screenshots."
+  ]
+}

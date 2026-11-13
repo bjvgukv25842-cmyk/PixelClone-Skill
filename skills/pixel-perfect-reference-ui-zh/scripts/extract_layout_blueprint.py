@@ -20,6 +20,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
+import re
 from pathlib import Path
 
 try:
@@ -108,10 +110,27 @@ def main() -> None:
     parser.add_argument("--grid", type=parse_grid, help="containerX,containerW,columns,gutter")
     parser.add_argument("--css-out", help="Optional CSS variable output path")
     args = parser.parse_args()
+    if args.viewport_width is not None and (not math.isfinite(args.viewport_width) or args.viewport_width <= 0):
+        parser.error("Viewport width must be finite and positive")
 
     src = Path(args.src)
     with Image.open(src) as img:
         canvas_w, canvas_h = img.size
+    if src.resolve() == Path(args.out).resolve() or (args.css_out and Path(args.css_out).resolve() in (src.resolve(), Path(args.out).resolve())):
+        parser.error("Source, JSON and CSS outputs must be distinct")
+    names = set()
+    for name, box, fit in args.section + args.region:
+        if not re.fullmatch(r"[A-Za-z][A-Za-z0-9_-]*", name) or name in names:
+            parser.error("Box names must be unique CSS-compatible identifiers")
+        names.add(name)
+        if not all(math.isfinite(v) for v in box) or box[0] < 0 or box[1] < 0 or box[2] > canvas_w or box[3] > canvas_h:
+            parser.error("Box is outside source canvas or non-finite")
+        if fit not in (None, "contain", "cover", "fill", "none", "scale-down"):
+            parser.error("Unknown fit mode")
+    if args.grid:
+        g = args.grid
+        if not all(math.isfinite(v) for v in g.values()) or g['columns'] < 1 or g['containerX'] < 0 or g['containerW'] <= 0 or g['gutter'] < 0 or g['containerX'] + g['containerW'] > canvas_w or g['gutter'] * (g['columns'] - 1) >= g['containerW']:
+            parser.error("Invalid grid geometry")
 
     scale = args.viewport_width / canvas_w if args.viewport_width else None
     sections = []

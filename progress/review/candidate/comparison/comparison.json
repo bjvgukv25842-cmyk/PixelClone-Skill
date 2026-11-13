@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "settings": {
+    "threshold": 0.1,
+    "maxDiffRatio": 0.01,
+    "includeAA": false
+  },
+  "exact": false,
+  "withinTolerance": false,
+  "page": {
+    "count": 679649,
+    "ratio": 0.524420524691358,
+    "rawDifferentPixels": 1128111,
+    "pass": false
+  },
+  "regions": [
+    {
+      "name": "hero",
+      "count": 168440,
+      "ratio": 0.6419207317073171,
+      "rawDifferentPixels": 252450,
+      "pass": false
+    },
+    {
+      "name": "navigation",
+      "count": 29014,
+      "ratio": 0.2293596837944664,
+      "rawDifferentPixels": 89181,
+      "pass": false
+    }
+  ],
+  "reference": "work/reference/desktop.png",
+  "actual": "../outputs/pixelclone-review/candidate/desktop-capture/screenshot.png"
+}

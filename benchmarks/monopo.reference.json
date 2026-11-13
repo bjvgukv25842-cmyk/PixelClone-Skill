@@ -1,0 +1,27 @@
+{
+  "url": "https://monopo.london/",
+  "channel": "msedge",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 1,
+  "animationMode": "live",
+  "actions": [
+    {
+      "type": "wait",
+      "ms": 10000
+    }
+  ],
+  "regions": [
+    {
+      "name": "navigation",
+      "selector": ".c-Header"
+    },
+    {
+      "name": "hero",
+      "selector": ".c-PixiIntro-title"
+    }
+  ],
+  "recordVideo": false
+}

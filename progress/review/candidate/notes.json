@@ -1,0 +1,143 @@
+{
+  "case": "Monopo navigation, hero, pointer lens and cookie dismissal",
+  "arm": "new frozen skill",
+  "status": "failed",
+  "humanReview": null,
+  "entry": "index.html",
+  "run": "Open index.html in Edge or serve this directory with an HTTP static server. No build installation required.",
+  "inputs": [
+    "../reference/desktop.png",
+    "../reference/dom.json",
+    "../reference/resources.json"
+  ],
+  "input_mode": "supplied screenshot plus DOM metadata and allowlisted resource URLs",
+  "source_application_code_used": false,
+  "baseline_outputs_read": false,
+  "screenshot_as_page_used": false,
+  "frozen_skill_hashes": {
+    "SKILL.md": "435cc96716c9c633b920228b5df8b3652728595705cbdcc7bbe56d72f3ffb322",
+    "references\\commands.md": "9ed7aa0cd4bdd1bfc974c7990599fd94130ab62a3a0540f863b1073538aa6d2b",
+    "references\\evaluation.md": "d2864db23a65b5447b6ea8c4ca5578e4efab6d6b344d0e833fd124d4e8819532",
+    "references\\evidence.md": "22fde36d428b7ef765fe36e7dd8261f095822966ca2d2ae505d198799a7b7ed8",
+    "references\\motion.md": "72114e80b3daed983c145ab41cb121e7968d0944916400c1a353606590a7599e"
+  },
+  "model_identifier": "unknown; inherited parent model settings",
+  "environment": {
+    "browser_channel": "msedge",
+    "browser_version": "156.0.4314.50",
+    "headless": true,
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "dpr": 1
+  },
+  "work_budget": {
+    "max_tool_calls": 20,
+    "tools_used_through_this_record": 16,
+    "count_basis": "conservative underlying tool invocations including collaboration; excludes wrapper calls",
+    "builds": 1,
+    "correction_passes": 1,
+    "maximum_correction_passes": 2,
+    "reason_stopped": "Source shader/motion/mobile evidence missing; additional cosmetic tuning cannot prove faithful effect."
+  },
+  "evidence": {
+    "screenshots": [
+      "evidence/desktop-initial.png",
+      "evidence/desktop-pointer.png",
+      "evidence/mobile-initial.png",
+      "evidence/mobile-menu.png"
+    ],
+    "tests": "evidence/validation.json",
+    "diff": "evidence/desktop-difference.png",
+    "metrics": "evidence/comparison.json",
+    "asset_manifest": "evidence/asset-manifest.json"
+  },
+  "requirements": [
+    {
+      "id": "desktop navigation and cookie layout",
+      "status": "partial",
+      "details": "Real accessible DOM with original font; close measured desktop placement but logo is text approximation."
+    },
+    {
+      "id": "hero typography",
+      "status": "partial",
+      "details": "Canvas text has zero DOM bounds in source evidence. English title inferred from screenshot; Japanese string and placement inferred."
+    },
+    {
+      "id": "pointer lens",
+      "status": "partial",
+      "details": "Working pointer-follow circle and chromatic Japanese overlay with original lens texture. No actual scene refraction, original displacement shader or pointer-dependent translation reconstruction."
+    },
+    {
+      "id": "cookie dismissal",
+      "status": "passed",
+      "details": "Dismissal and local persistence tested."
+    },
+    {
+      "id": "mobile",
+      "status": "partial",
+      "details": "390x844 no overflow and menu works. Layout is inferred because no mobile reference was supplied."
+    },
+    {
+      "id": "navigation behavior",
+      "status": "partial",
+      "details": "Local destination sections show reference text and work. Full original routes/pages not reconstructed."
+    },
+    {
+      "id": "reduced motion",
+      "status": "passed",
+      "details": "Decorative lens stays fixed under reduced-motion preference."
+    },
+    {
+      "id": "exact visual and dynamic parity",
+      "status": "failed",
+      "details": "Background and lens differ visibly and underlying motion is unavailable."
+    }
+  ],
+  "missing_features": [
+    "Original background shader and its time-dependent deformation",
+    "Original lens refraction and chromatic displacement mapping",
+    "Original Japanese phrase positioning and distortion behavior",
+    "Validated mobile reference layout and behavior",
+    "Complete target route pages",
+    "Reference stability test and continuous original-motion comparison",
+    "Original logo vector not present in allowlisted resources"
+  ],
+  "source_policy_assessment": {
+    "original_assets_used": [
+      "Roobert regular and bold",
+      "Noto Sans CJK JP",
+      "lense.png",
+      "footer-circles.svg"
+    ],
+    "unconsumed_reference_assets": [
+      "displace.png",
+      "mask.png",
+      "arrow_scroll.png"
+    ],
+    "background": "Procedural canvas curves and grain generated from visual inference; not recovered source or crop. Background is static.",
+    "lens": "Visual approximation; original texture lightly composited over an inferred circle. No claim of exact effect.",
+    "strict_source_gate": "failed under strict no-substitution interpretation",
+    "explanation": "The missing shader was replaced with an inferred canvas field and a CSS lens. Disclosure does not turn these replacements into original resources or a faithful effect. The delegated task permitted labeling visual inference, but a literal policy requiring missing originals to remain an explicit gap would forbid these substitutes."
+  },
+  "skill_effects": [
+    "Frozen skill foregrounded original asset/font reuse and explicit missing-source reporting.",
+    "Canvas zero bounds were correctly treated as unusable visible-title measurement.",
+    "Reduced motion, real DOM, functional tests and honest partial statuses were retained.",
+    "The skill could not supply missing shader, animation or mobile evidence; those remain gaps."
+  ],
+  "execution_deviations": [
+    "QA script reused screenshot filenames for correction pass, so initial screenshots were overwritten; current *-initial.png files represent final corrected initial state. First-attempt and repair outcomes were not retained separately.",
+    "No three-capture reference stability study was possible from supplied still inputs.",
+    "Font loading verified via document.fonts but actual Chromium platform-font identity was not separately queried.",
+    "Raw pixel diagnostics were used, not the skill toolkit threshold/anti-alias comparison."
+  ],
+  "validation_summary": {
+    "checks_passed": 9,
+    "checks_total": 9,
+    "page_errors": [],
+    "visual_pass": false,
+    "overall_pass": false
+  }
+}

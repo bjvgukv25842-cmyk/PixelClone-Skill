@@ -1,0 +1,17 @@
+node_modules/
+work/
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+auth.json
+storage-state*.json
+playwright/.auth/
+
+# Reference-site resources are private evaluation inputs, not skill distribution.
+cases/monopo-r1/assets/
+cases/monopo-r1/vendor/

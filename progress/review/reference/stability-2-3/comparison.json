@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "settings": {
+    "threshold": 0.1,
+    "maxDiffRatio": 0.01,
+    "includeAA": false
+  },
+  "exact": true,
+  "withinTolerance": true,
+  "page": {
+    "count": 0,
+    "ratio": 0,
+    "rawDifferentPixels": 0,
+    "pass": true
+  },
+  "regions": [],
+  "reference": "work/reference/run-2/screenshot.png",
+  "actual": "work/reference/run-3/screenshot.png"
+}
