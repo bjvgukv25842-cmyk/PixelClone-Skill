@@ -2,7 +2,8 @@ name: toolkit-tests
 on: [push, pull_request]
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    # Playwright 1.58.2 supports Ubuntu 24.04; avoid ubuntu-latest image drift.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
